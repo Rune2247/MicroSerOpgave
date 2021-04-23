@@ -6,6 +6,7 @@ import dk.eaaa.resource.dto.QuestionAnswerDTO;
 import dk.eaaa.resource.dto.QuestionDTO;
 import dk.eaaa.service.AnswerService;
 import dk.eaaa.service.response.AnswerResponse;
+import java.util.Random;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -32,7 +33,10 @@ public class Resource {
     @GET
     public QuestionDTO GetAnswer(){
 //Send a random question
-        return mapper.toQuestionDTO(service.getQuestion().get(0));
+        Random r = new Random();
+        int maxInt = service.getQuestion().size();
+        int number = r.nextInt(maxInt);
+        return mapper.toQuestionDTO(service.getQuestion().get(number));
     }
 
     @Path("/qu/{id}")

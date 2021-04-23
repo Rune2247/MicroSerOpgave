@@ -932,3 +932,84 @@ apr. 22, 2021 12:33:54 PM io.helidon.microprofile.server.ServerCdiExtension star
 INFO: Server started on http://localhost:8099 (and all other host addresses) in 6748 milliseconds (since JVM startup).
 apr. 22, 2021 12:33:54 PM io.helidon.common.HelidonFeatures features
 INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
+Listening for transport dt_socket at address: 10099
+apr. 23, 2021 8:14:01 AM io.helidon.common.LogConfig doConfigureLogging
+INFO: Logging at initialization configured using defaults
+apr. 23, 2021 8:14:02 AM org.jboss.weld.bootstrap.WeldStartup <clinit>
+INFO: WELD-000900: 3.1.4 (Final)
+apr. 23, 2021 8:14:03 AM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
+INFO: WELD-ENV-000020: Using jandex for bean discovery
+apr. 23, 2021 8:14:04 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+apr. 23, 2021 8:14:04 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+apr. 23, 2021 8:14:05 AM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
+INFO: TracerResolver not configured, tracing is disabled
+apr. 23, 2021 8:14:05 AM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
+WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
+apr. 23, 2021 8:14:05 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
+apr. 23, 2021 8:14:05 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
+apr. 23, 2021 8:14:06 AM io.helidon.microprofile.server.ServerCdiExtension addApplication
+INFO: Registering JAX-RS Application: Quiz_OP
+apr. 23, 2021 8:14:09 AM io.helidon.webserver.NettyWebServer lambda$start$7
+INFO: Channel '@default' started: [id: 0xdb215002, L:/0:0:0:0:0:0:0:0:8099]
+apr. 23, 2021 8:14:09 AM io.helidon.microprofile.server.ServerCdiExtension startServer
+INFO: Server started on http://localhost:8099 (and all other host addresses) in 8012 milliseconds (since JVM startup).
+apr. 23, 2021 8:14:09 AM io.helidon.common.HelidonFeatures features
+INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
+Listening for transport dt_socket at address: 10099
+apr. 23, 2021 8:20:23 AM io.helidon.common.LogConfig doConfigureLogging
+INFO: Logging at initialization configured using defaults
+apr. 23, 2021 8:20:23 AM org.jboss.weld.bootstrap.WeldStartup <clinit>
+INFO: WELD-000900: 3.1.4 (Final)
+apr. 23, 2021 8:20:25 AM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
+INFO: WELD-ENV-000020: Using jandex for bean discovery
+apr. 23, 2021 8:20:26 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+apr. 23, 2021 8:20:26 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+apr. 23, 2021 8:20:28 AM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
+INFO: TracerResolver not configured, tracing is disabled
+apr. 23, 2021 8:20:28 AM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
+WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
+apr. 23, 2021 8:20:28 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
+apr. 23, 2021 8:20:28 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
+apr. 23, 2021 8:20:29 AM io.helidon.microprofile.server.ServerCdiExtension addApplication
+INFO: Registering JAX-RS Application: Quiz_OP
+apr. 23, 2021 8:20:32 AM io.helidon.webserver.NettyWebServer lambda$start$7
+INFO: Channel '@default' started: [id: 0xdb668258, L:/0:0:0:0:0:0:0:0:8099]
+apr. 23, 2021 8:20:32 AM io.helidon.microprofile.server.ServerCdiExtension startServer
+INFO: Server started on http://localhost:8099 (and all other host addresses) in 9289 milliseconds (since JVM startup).
+apr. 23, 2021 8:20:32 AM io.helidon.common.HelidonFeatures features
+INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
+Listening for transport dt_socket at address: 10099
+apr. 23, 2021 9:10:32 AM io.helidon.common.LogConfig doConfigureLogging
+INFO: Logging at initialization configured using defaults
+apr. 23, 2021 9:10:32 AM org.jboss.weld.bootstrap.WeldStartup <clinit>
+INFO: WELD-000900: 3.1.4 (Final)
+apr. 23, 2021 9:10:33 AM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
+INFO: WELD-ENV-000020: Using jandex for bean discovery
+apr. 23, 2021 9:10:34 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+apr. 23, 2021 9:10:34 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+apr. 23, 2021 9:10:35 AM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
+INFO: TracerResolver not configured, tracing is disabled
+apr. 23, 2021 9:10:35 AM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
+WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
+apr. 23, 2021 9:10:35 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
+apr. 23, 2021 9:10:35 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
+apr. 23, 2021 9:10:36 AM io.helidon.microprofile.server.ServerCdiExtension addApplication
+INFO: Registering JAX-RS Application: Quiz_OP
+apr. 23, 2021 9:10:38 AM io.helidon.webserver.NettyWebServer lambda$start$7
+INFO: Channel '@default' started: [id: 0x78aa0e29, L:/0:0:0:0:0:0:0:0:8099]
+apr. 23, 2021 9:10:38 AM io.helidon.microprofile.server.ServerCdiExtension startServer
+INFO: Server started on http://localhost:8099 (and all other host addresses) in 6792 milliseconds (since JVM startup).
+apr. 23, 2021 9:10:38 AM io.helidon.common.HelidonFeatures features
+INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
