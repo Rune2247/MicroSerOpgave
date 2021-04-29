@@ -36,9 +36,11 @@ public class AnswerService implements Service {
 
     //Kør alle spørgsmål igennem
         for (int i = 0; i <repository.getQuestionList().size() ; i++) {
+
             //Find det rigtige spørgsmål
             if (questionID == repository.getQuestionList().get(i).getId()){
                 Question q = repository.getQuestionList().get(i);
+
                 Explanation explanation = repository.getExplanationList().get(i);
 
                 //køre alle answeres igennem
@@ -49,7 +51,7 @@ public class AnswerService implements Service {
                         AnswerResponse answerResponse = new AnswerResponse(explanation,false);
 
                         //kig om den er korrekt, hvis ikke forbliver den på false
-                        if (q.getAnswers().get(j).isCorrect() == true){
+                        if (q.getAnswers().get(j).isCorrect()){
 
                             answerResponse.setCorrectAnswer(true);
                         }

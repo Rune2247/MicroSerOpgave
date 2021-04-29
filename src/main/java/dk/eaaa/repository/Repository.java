@@ -140,7 +140,7 @@ public class Repository {
 
         Explanation e21 = new Explanation("Emus destroyed fields and drank up precious water supplies in 'the outback', so the Australian govermnet deployed WWI veterans to fight them.", "https://en.wikipedia.org/wiki/Emu_War");
 
-
+        ExplanationList.add(e21);
 
 
         //-----------------------------------------------------------------------------------
