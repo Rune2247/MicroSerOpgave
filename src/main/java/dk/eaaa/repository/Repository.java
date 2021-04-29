@@ -113,7 +113,7 @@ public class Repository {
 
         answerList.addAll(answerList5);
 
-        Question q5 = new Question(5, "Kaffe", "Espresso", 10, "What's the best ratio of coffee to water, when brewing Espresso?", answerList5);
+        Question q5 = new Question(5, "Coffee", "Espresso", 10, "What's the best ratio of coffee to water, when brewing Espresso?", answerList5);
 
 
         QuestionList.add(q5);
