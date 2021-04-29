@@ -134,11 +134,11 @@ public class Repository {
 
         answerList.addAll(answerList21);
 
-        Question q21 = new Question(21, "History", "Australian History", 10, "In 1932-33 the Australian govermnet declared war against [...], and lost!",  answerList21);
+        Question q21 = new Question(21, "History", "Australian History", 10, "In 1932-33 the Australian government declared war against [...], and lost!",  answerList21);
 
         QuestionList.add(q21);
 
-        Explanation e21 = new Explanation("Emus destroyed fields and drank up precious water supplies in 'the outback', so the Australian govermnet deployed WWI veterans to fight them.", "https://en.wikipedia.org/wiki/Emu_War");
+        Explanation e21 = new Explanation("Emus destroyed fields and drank up precious water supplies in 'the outback', so the Australian government deployed WWI veterans to fight them.", "https://en.wikipedia.org/wiki/Emu_War");
 
         ExplanationList.add(e21);
 
