@@ -9,11 +9,11 @@ public class Advertisement {
     String type;
     String headline;
     String text;
-    String price;
+    int price;
     Id user;
     LocalDate creationDate;
 
-    public Advertisement(Id id, String category, String type, String headline, String text, String price, Id user, LocalDate creationDate) {
+    public Advertisement(Id id, String category, String type, String headline, String text, int price, Id user, LocalDate creationDate) {
         this.id = id;
         this.category = category;
         this.type = type;
@@ -44,7 +44,7 @@ public class Advertisement {
         return text;
     }
 
-    public String getPrice() {
+    public int getPrice() {
         return price;
     }
 

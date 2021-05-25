@@ -1,8 +1,9 @@
 package dk.eaaa.resource;
 
+import dk.eaaa.domain.Advertisement;
 import dk.eaaa.resource.dto.CreateAdvertisementDTO;
 import dk.eaaa.service.response.AdvertisementService;
-import dk.eaaa.service.response.UserService;
+import dk.eaaa.service.response.request.CreateAdvertisementRequest;
 
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
@@ -13,7 +14,7 @@ import javax.ws.rs.core.MediaType;
 
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-@Path("/advertisement")
+@Path("/advertisements")
 public class AdvertisementResource {
     private final AdvertisementService advertisementService;
     private final Mapper mapper;
@@ -26,9 +27,10 @@ public class AdvertisementResource {
 
 
     @Consumes(MediaType.APPLICATION_JSON)
-    @Path("/create")
+    @Path("/")
     @POST
     public void createAdvertisement(CreateAdvertisementDTO advertisementDTO){
-
+    advertisementService.createAdvertisement(mapper.createAdvertisement(advertisementDTO));
     }
+
 }

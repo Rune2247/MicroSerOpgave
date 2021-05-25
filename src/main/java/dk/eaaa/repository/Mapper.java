@@ -13,7 +13,7 @@ import javax.enterprise.context.Dependent;
 class Mapper {
 
     User mapUser(UserPO userPO) {
-        User newUser = new User(new Id(userPO.getId()),
+        return new User(new Id(userPO.getId()),
                 userPO.getFirstName(),
                 userPO.getLastName(),
                 userPO.getCompanyName(),
@@ -23,12 +23,11 @@ class Mapper {
                 userPO.getCityFK(),
                 userPO.getType(),
                 userPO.getCreated());
-        return newUser;
     }
 
     Advertisement mapAdvertisement(AdvertisementPO advertisementPO){
         return new Advertisement(new Id(advertisementPO.getId()), advertisementPO.getCategory(),advertisementPO.getType()
-        ,advertisementPO.getHeadline(),advertisementPO.getText(),advertisementPO.getPrice(),new Id(advertisementPO.getUser_FK()),advertisementPO.getCreationDate());
+        ,advertisementPO.getHeadline(),advertisementPO.getText(),advertisementPO.getPrice(),new Id(advertisementPO.getUser().getId()),advertisementPO.getCreationDate());
     }
 
 }

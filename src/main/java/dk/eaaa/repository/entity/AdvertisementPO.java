@@ -7,6 +7,7 @@ import java.time.LocalDate;
 import java.util.UUID;
 
 @Entity
+@Table(name ="ADVERTISEMENT")
 @NamedQueries({
         @NamedQuery(name = "AdvertisementPO.findAll", query = "SELECT u FROM AdvertisementPO u")})
 public class AdvertisementPO {
@@ -27,9 +28,10 @@ public static final String FIND_ALL = "AdvertisementPO.findAll";
     @Column(name = "TEXT", columnDefinition = "VARCHAR(1000)", nullable = false)
     private String text;
     @Column(name = "PRICE", columnDefinition = "int", nullable = false)
-    private String price;
-    @Column(name = "USER_FK", columnDefinition = "VARCHAR(40)", nullable = false)
-    private String user_FK;
+    private int price;
+    @ManyToOne()
+    @JoinColumn(name = "USER_FK", referencedColumnName = "ID")
+    private UserPO user;
     @Column(name = "CREATION_DATE", columnDefinition = "Date", nullable = false)
     private LocalDate creationDate;
 
@@ -37,14 +39,14 @@ public static final String FIND_ALL = "AdvertisementPO.findAll";
         //JPA
     }
 
-    public AdvertisementPO(UUID id, String category, String type, String headline, String text, String price, String user_FK, LocalDate creationDate) {
-        this.id = id;
+    public AdvertisementPO(String category, String type, String headline, String text, int price, UserPO user, LocalDate creationDate) {
+
         this.category = category;
         this.type = type;
         this.headline = headline;
         this.text = text;
         this.price = price;
-        this.user_FK = user_FK;
+        this.user = user;
         this.creationDate = creationDate;
     }
 
@@ -72,12 +74,12 @@ public static final String FIND_ALL = "AdvertisementPO.findAll";
         return text;
     }
 
-    public String getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public String getUser_FK() {
-        return user_FK;
+    public UserPO getUser() {
+        return user;
     }
 
     public LocalDate getCreationDate() {

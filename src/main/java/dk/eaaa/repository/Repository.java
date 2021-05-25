@@ -6,6 +6,7 @@ import dk.eaaa.domain.User;
 import dk.eaaa.repository.entity.AdvertisementPO;
 import dk.eaaa.repository.entity.UserPO;
 import dk.eaaa.repository.entitymanager.DemoEntityManager;
+import dk.eaaa.service.response.request.CreateAdvertisementRequest;
 
 import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
@@ -34,11 +35,21 @@ public class Repository {
     public Advertisement getAdvertisement(Id id){
         return mapper.mapAdvertisement(entityManager.find(AdvertisementPO.class,id.getId()));
     }
-    public void createAdvertisement(Advertisement advertisement){
-entityManager.persist(new AdvertisementPO(UUID.randomUUID(),advertisement.getCategory(),advertisement.getType(),advertisement.getHeadline(),advertisement.getText(),advertisement.getPrice(),advertisement.getUser().getRaw(),advertisement.getCreationDate()));
+
+    public void createAdvertisement(CreateAdvertisementRequest advertisement){
+
+        UserPO userPO= entityManager.find(UserPO.class, advertisement.getUserFK().getId());
+
+entityManager.persist(
+        new AdvertisementPO(
+        advertisement.getCategory(),
+        advertisement.getType(),
+        advertisement.getHeadline(),
+        advertisement.getText(),
+        advertisement.getPrice(),
+        userPO,
+        LocalDate.now()
+));
     }
 
-    public static void main(String[] arg){
-        System.out.println(UUID.randomUUID());
-    }
 }

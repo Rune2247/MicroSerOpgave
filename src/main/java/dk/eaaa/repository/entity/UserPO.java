@@ -5,6 +5,7 @@ import org.hibernate.annotations.Type;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.UUID;
 
 
@@ -45,10 +46,11 @@ public class UserPO {
     @Column(name = "TYPE", columnDefinition = "VARCHAR(10)", nullable = false)
     private String type;
 
-
     @Column(name = "CREATION_DATE", columnDefinition = "TIMESTAMP", nullable = false)
     private LocalDate created;
 
+    @OneToMany()
+    private List<AdvertisementPO> advertisements;
 
     public UserPO() {
         // JPA
@@ -65,6 +67,10 @@ public class UserPO {
         this.type = type;
         this.created = LocalDate.now();
 
+    }
+
+    public List<AdvertisementPO> getAdvertisements() {
+        return advertisements;
     }
 
     public UUID getId() {
