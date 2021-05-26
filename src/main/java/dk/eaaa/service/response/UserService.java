@@ -3,6 +3,7 @@ package dk.eaaa.service.response;
 import dk.eaaa.domain.Id;
 import dk.eaaa.domain.User;
 import dk.eaaa.repository.Repository;
+import dk.eaaa.service.response.request.CreateUserRequest;
 
 import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
@@ -18,4 +19,5 @@ public class UserService {
     public User getUserById(Id id){
         return repository.getUser(id);
     }
+    public void createUser(CreateUserRequest user){repository.CreateUser(user);}
 }

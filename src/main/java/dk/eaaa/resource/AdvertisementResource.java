@@ -1,16 +1,15 @@
 package dk.eaaa.resource;
 
 import dk.eaaa.domain.Advertisement;
+import dk.eaaa.resource.dto.AdvertisementDTO;
 import dk.eaaa.resource.dto.CreateAdvertisementDTO;
 import dk.eaaa.service.response.AdvertisementService;
 import dk.eaaa.service.response.request.CreateAdvertisementRequest;
 
 import javax.inject.Inject;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import java.util.List;
 
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
@@ -32,5 +31,19 @@ public class AdvertisementResource {
     public void createAdvertisement(CreateAdvertisementDTO advertisementDTO){
     advertisementService.createAdvertisement(mapper.createAdvertisement(advertisementDTO));
     }
+    //http://host:port/advertisements med query param ?category=<caterory>
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/")
+    @GET
+    public List<AdvertisementDTO> getAllAdvertisements(){
+   return mapper.toAdvertisementDTOList(advertisementService.getAllAdvatisements());
+    }
 
+    //http://host:port/advertisements/{id} der returnerer en specific advertisment
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/{id}")
+    @GET
+    public AdvertisementDTO getAdvertisementsForUser(@PathParam("id") String Id){
+        return mapper.toAdvertisementDTOForUserId(advertisementService.getAllAdvatisements(),Id);
+    }
 }

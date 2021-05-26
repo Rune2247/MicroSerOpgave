@@ -7,6 +7,7 @@ import dk.eaaa.service.response.request.CreateAdvertisementRequest;
 import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Dependent
 @Transactional(rollbackOn = Exception.class)
@@ -21,5 +22,9 @@ public class AdvertisementService {
 
     public void createAdvertisement(CreateAdvertisementRequest advertisement){
         repository.createAdvertisement(advertisement);
+    }
+
+    public List<Advertisement> getAllAdvatisements(){
+        return repository.getAllAdvertisements();
     }
 }

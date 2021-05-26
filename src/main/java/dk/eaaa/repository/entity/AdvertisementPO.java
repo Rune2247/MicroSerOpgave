@@ -39,7 +39,7 @@ public static final String FIND_ALL = "AdvertisementPO.findAll";
         //JPA
     }
 
-    public AdvertisementPO(String category, String type, String headline, String text, int price, UserPO user, LocalDate creationDate) {
+    public AdvertisementPO(String category, String type, String headline, String text, int price, UserPO user) {
 
         this.category = category;
         this.type = type;
@@ -47,7 +47,7 @@ public static final String FIND_ALL = "AdvertisementPO.findAll";
         this.text = text;
         this.price = price;
         this.user = user;
-        this.creationDate = creationDate;
+        this.creationDate = LocalDate.now();
     }
 
     public static String getFindAll() {

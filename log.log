@@ -1,55 +1,440 @@
 Listening for transport dt_socket at address: 10099
-maj 25, 2021 10:31:40 AM io.helidon.common.LogConfig doConfigureLogging
+maj 25, 2021 3:08:23 PM io.helidon.common.LogConfig doConfigureLogging
 INFO: Logging at initialization configured using defaults
-maj 25, 2021 10:31:40 AM org.jboss.weld.bootstrap.WeldStartup <clinit>
+maj 25, 2021 3:08:23 PM org.jboss.weld.bootstrap.WeldStartup <clinit>
 INFO: WELD-000900: 3.1.4 (Final)
-maj 25, 2021 10:31:41 AM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
+maj 25, 2021 3:08:24 PM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
 INFO: WELD-ENV-000020: Using jandex for bean discovery
-maj 25, 2021 10:31:41 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+maj 25, 2021 3:08:24 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
 INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 10:31:41 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+maj 25, 2021 3:08:24 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
 INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 10:31:43 AM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
+maj 25, 2021 3:08:26 PM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
 INFO: TracerResolver not configured, tracing is disabled
-maj 25, 2021 10:31:43 AM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
+maj 25, 2021 3:08:26 PM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
 WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
-maj 25, 2021 10:31:43 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+maj 25, 2021 3:08:26 PM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
 INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
-maj 25, 2021 10:31:43 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+maj 25, 2021 3:08:26 PM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
 INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
-maj 25, 2021 10:31:44 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+maj 25, 2021 3:08:26 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
-maj 25, 2021 10:31:44 AM org.hibernate.Version logVersion
+maj 25, 2021 3:08:26 PM org.hibernate.Version logVersion
 INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
-maj 25, 2021 10:31:44 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+maj 25, 2021 3:08:27 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
 INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-maj 25, 2021 10:31:45 AM com.zaxxer.hikari.HikariDataSource <init>
+maj 25, 2021 3:08:27 PM com.zaxxer.hikari.HikariDataSource <init>
 INFO: HikariPool-1 - Starting...
-maj 25, 2021 10:31:45 AM com.zaxxer.hikari.HikariDataSource <init>
+maj 25, 2021 3:08:27 PM com.zaxxer.hikari.HikariDataSource <init>
 INFO: HikariPool-1 - Start completed.
-maj 25, 2021 10:31:45 AM org.hibernate.dialect.Dialect <init>
+maj 25, 2021 3:08:27 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
-maj 25, 2021 10:31:47 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+maj 25, 2021 3:08:28 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
 INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
-maj 25, 2021 10:31:47 AM io.helidon.microprofile.server.ServerCdiExtension addApplication
+maj 25, 2021 3:08:29 PM io.helidon.microprofile.server.ServerCdiExtension addApplication
 INFO: Registering JAX-RS Application: Quiz_OP
-maj 25, 2021 10:31:49 AM io.helidon.webserver.NettyWebServer lambda$start$7
-INFO: Channel '@default' started: [id: 0x808a89f7, L:/0:0:0:0:0:0:0:0:8099]
-maj 25, 2021 10:31:49 AM io.helidon.microprofile.server.ServerCdiExtension startServer
-INFO: Server started on http://localhost:8099 (and all other host addresses) in 9524 milliseconds (since JVM startup).
-maj 25, 2021 10:31:49 AM io.helidon.common.HelidonFeatures features
+maj 25, 2021 3:08:29 PM org.glassfish.jersey.internal.Errors logErrors
+WARNING: The following warnings have been detected: WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.UserResource contains empty path annotation.
+WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.AdvertisementResource contains empty path annotation.
+
+maj 25, 2021 3:08:30 PM io.helidon.webserver.NettyWebServer lambda$start$7
+INFO: Channel '@default' startup failed with message 'Address already in use: bind'.
+maj 25, 2021 3:08:30 PM com.zaxxer.hikari.HikariDataSource close
+INFO: HikariPool-1 - Shutdown initiated...
+maj 25, 2021 3:08:30 PM com.zaxxer.hikari.HikariDataSource close
+INFO: HikariPool-1 - Shutdown completed.
+maj 25, 2021 3:08:30 PM org.hibernate.resource.beans.container.spi.AbstractCdiBeanContainer stop
+INFO: HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerImmediateAccessImpl@7322013f
+maj 25, 2021 3:08:30 PM io.helidon.microprofile.cdi.HelidonContainerImpl$HelidonCdi close
+INFO: WELD-ENV-002001: Weld SE container 3fcf98c2-a1db-46b0-9b3e-04633d3ab1a1 shut down
+Exception in thread "main" javax.enterprise.inject.spi.DeploymentException: Failed to start webserver
+	at io.helidon.microprofile.server.ServerCdiExtension.startServer(ServerCdiExtension.java:139)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.weld.injection.StaticMethodInjectionPoint.invoke(StaticMethodInjectionPoint.java:95)
+	at org.jboss.weld.injection.MethodInvocationStrategy$SpecialParamPlusBeanManagerStrategy.invoke(MethodInvocationStrategy.java:187)
+	at org.jboss.weld.event.ObserverMethodImpl.sendEvent(ObserverMethodImpl.java:330)
+	at org.jboss.weld.event.ExtensionObserverMethodImpl.sendEvent(ExtensionObserverMethodImpl.java:123)
+	at org.jboss.weld.event.ObserverMethodImpl.sendEvent(ObserverMethodImpl.java:308)
+	at org.jboss.weld.event.ObserverMethodImpl.notify(ObserverMethodImpl.java:286)
+	at javax.enterprise.inject.spi.ObserverMethod.notify(ObserverMethod.java:124)
+	at org.jboss.weld.util.Observers.notify(Observers.java:166)
+	at org.jboss.weld.event.ObserverNotifier.notifySyncObservers(ObserverNotifier.java:285)
+	at org.jboss.weld.event.ObserverNotifier.notify(ObserverNotifier.java:273)
+	at org.jboss.weld.event.EventImpl.fire(EventImpl.java:96)
+	at io.helidon.microprofile.cdi.HelidonContainerImpl.doStart(HelidonContainerImpl.java:335)
+	at io.helidon.common.context.Contexts.runInContext(Contexts.java:137)
+	at io.helidon.microprofile.cdi.HelidonContainerImpl.start(HelidonContainerImpl.java:245)
+	at io.helidon.microprofile.server.ServerImpl.start(ServerImpl.java:85)
+	at dk.eaaa.Main.main(Main.java:15)
+Caused by: java.util.concurrent.ExecutionException: java.lang.IllegalStateException: WebServer was unable to start.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1999)
+	at io.helidon.microprofile.server.ServerCdiExtension.startServer(ServerCdiExtension.java:136)
+	... 20 more
+Caused by: java.lang.IllegalStateException: WebServer was unable to start.
+	at io.helidon.webserver.NettyWebServer.lambda$startFailureHandler$9(NettyWebServer.java:325)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)
+	at io.helidon.webserver.NettyWebServer.lambda$shutdownThreadGroups$11(NettyWebServer.java:363)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:605)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess(DefaultPromise.java:96)
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup$1.operationComplete(MultithreadEventExecutorGroup.java:117)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552)
+	at io.netty.util.concurrent.DefaultPromise.access$200(DefaultPromise.java:35)
+	at io.netty.util.concurrent.DefaultPromise$1.run(DefaultPromise.java:502)
+	at io.netty.util.concurrent.GlobalEventExecutor$TaskRunner.run(GlobalEventExecutor.java:243)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.util.concurrent.CompletionException: java.lang.IllegalStateException: Channel startup failed: @default, failed to listen on 0.0.0.0/0.0.0.0:8099
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at io.helidon.webserver.NettyWebServer.lambda$start$7(NettyWebServer.java:250)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetFailure(AbstractChannel.java:1009)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:552)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:506)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:491)
+	at io.netty.handler.logging.LoggingHandler.bind(LoggingHandler.java:221)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:506)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:491)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:248)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	... 3 more
+Caused by: java.lang.IllegalStateException: Channel startup failed: @default, failed to listen on 0.0.0.0/0.0.0.0:8099
+	at io.helidon.webserver.NettyWebServer.lambda$start$7(NettyWebServer.java:251)
+	... 24 more
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:455)
+	at java.base/sun.nio.ch.Net.bind(Net.java:447)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:134)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:550)
+	... 16 more
+Listening for transport dt_socket at address: 10099
+maj 25, 2021 3:09:20 PM io.helidon.common.LogConfig doConfigureLogging
+INFO: Logging at initialization configured using defaults
+maj 25, 2021 3:09:20 PM org.jboss.weld.bootstrap.WeldStartup <clinit>
+INFO: WELD-000900: 3.1.4 (Final)
+maj 25, 2021 3:09:21 PM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
+INFO: WELD-ENV-000020: Using jandex for bean discovery
+maj 25, 2021 3:09:22 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+maj 25, 2021 3:09:22 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+maj 25, 2021 3:09:23 PM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
+INFO: TracerResolver not configured, tracing is disabled
+maj 25, 2021 3:09:23 PM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
+WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
+maj 25, 2021 3:09:23 PM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
+maj 25, 2021 3:09:23 PM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
+maj 25, 2021 3:09:24 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
+maj 25, 2021 3:09:24 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
+maj 25, 2021 3:09:24 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+maj 25, 2021 3:09:24 PM com.zaxxer.hikari.HikariDataSource <init>
+INFO: HikariPool-1 - Starting...
+maj 25, 2021 3:09:25 PM com.zaxxer.hikari.HikariDataSource <init>
+INFO: HikariPool-1 - Start completed.
+maj 25, 2021 3:09:25 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+maj 25, 2021 3:09:26 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
+maj 25, 2021 3:09:26 PM io.helidon.microprofile.server.ServerCdiExtension addApplication
+INFO: Registering JAX-RS Application: Quiz_OP
+maj 25, 2021 3:09:26 PM org.glassfish.jersey.internal.Errors logErrors
+WARNING: The following warnings have been detected: WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.UserResource contains empty path annotation.
+WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.AdvertisementResource contains empty path annotation.
+
+maj 25, 2021 3:09:27 PM io.helidon.webserver.NettyWebServer lambda$start$7
+INFO: Channel '@default' started: [id: 0x15ed1922, L:/0:0:0:0:0:0:0:0:8099]
+maj 25, 2021 3:09:27 PM io.helidon.microprofile.server.ServerCdiExtension startServer
+INFO: Server started on http://localhost:8099 (and all other host addresses) in 7150 milliseconds (since JVM startup).
+maj 25, 2021 3:09:27 PM io.helidon.common.HelidonFeatures features
 INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
-maj 25, 2021 10:31:52 AM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
+maj 25, 2021 3:10:30 PM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
+WARNING: Internal server error
+java.lang.IllegalArgumentException: Invalid UUID string: 
+	at java.base/java.util.UUID.fromString(UUID.java:215)
+	at dk.eaaa.domain.Id.<init>(Id.java:14)
+	at dk.eaaa.resource.Mapper.fromCreateUser(Mapper.java:78)
+	at dk.eaaa.resource.UserResource.createAdvertisement(UserResource.java:39)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createAdvertisement$$super(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.weld.interceptor.proxy.TerminalAroundInvokeInvocationContext.proceedInternal(TerminalAroundInvokeInvocationContext.java:51)
+	at org.jboss.weld.interceptor.proxy.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:78)
+	at io.helidon.microprofile.metrics.InterceptorSyntheticSimplyTimed.interceptRestEndpoint(InterceptorSyntheticSimplyTimed.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createAdvertisement(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:475)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:397)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:255)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:234)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+	at io.helidon.webserver.jersey.JerseySupport$JerseyHandler.lambda$doAccept$3(JerseySupport.java:293)
+	at io.helidon.common.context.Contexts.runInContext(Contexts.java:117)
+	at io.helidon.common.context.ContextAwareExecutorImpl.lambda$wrap$5(ContextAwareExecutorImpl.java:154)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Listening for transport dt_socket at address: 10099
+maj 25, 2021 3:12:14 PM io.helidon.common.LogConfig doConfigureLogging
+INFO: Logging at initialization configured using defaults
+maj 25, 2021 3:12:14 PM org.jboss.weld.bootstrap.WeldStartup <clinit>
+INFO: WELD-000900: 3.1.4 (Final)
+maj 25, 2021 3:12:15 PM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
+INFO: WELD-ENV-000020: Using jandex for bean discovery
+maj 25, 2021 3:12:16 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+maj 25, 2021 3:12:16 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+maj 25, 2021 3:12:17 PM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
+INFO: TracerResolver not configured, tracing is disabled
+maj 25, 2021 3:12:17 PM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
+WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
+maj 25, 2021 3:12:17 PM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
+maj 25, 2021 3:12:17 PM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
+maj 25, 2021 3:12:18 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
+maj 25, 2021 3:12:18 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
+maj 25, 2021 3:12:19 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+maj 25, 2021 3:12:19 PM com.zaxxer.hikari.HikariDataSource <init>
+INFO: HikariPool-1 - Starting...
+maj 25, 2021 3:12:19 PM com.zaxxer.hikari.HikariDataSource <init>
+INFO: HikariPool-1 - Start completed.
+maj 25, 2021 3:12:19 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+maj 25, 2021 3:12:21 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
+maj 25, 2021 3:12:21 PM io.helidon.microprofile.server.ServerCdiExtension addApplication
+INFO: Registering JAX-RS Application: Quiz_OP
+maj 25, 2021 3:12:22 PM org.glassfish.jersey.internal.Errors logErrors
+WARNING: The following warnings have been detected: WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.UserResource contains empty path annotation.
+WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.AdvertisementResource contains empty path annotation.
+
+maj 25, 2021 3:12:22 PM io.helidon.webserver.NettyWebServer lambda$start$7
+INFO: Channel '@default' started: [id: 0x6f272f6d, L:/0:0:0:0:0:0:0:0:8099]
+maj 25, 2021 3:12:22 PM io.helidon.microprofile.server.ServerCdiExtension startServer
+INFO: Server started on http://localhost:8099 (and all other host addresses) in 8526 milliseconds (since JVM startup).
+maj 25, 2021 3:12:22 PM io.helidon.common.HelidonFeatures features
+INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
+Listening for transport dt_socket at address: 10099
+maj 25, 2021 3:12:43 PM io.helidon.common.LogConfig doConfigureLogging
+INFO: Logging at initialization configured using defaults
+maj 25, 2021 3:12:44 PM org.jboss.weld.bootstrap.WeldStartup <clinit>
+INFO: WELD-000900: 3.1.4 (Final)
+maj 25, 2021 3:12:45 PM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
+INFO: WELD-ENV-000020: Using jandex for bean discovery
+maj 25, 2021 3:12:45 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+maj 25, 2021 3:12:45 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+maj 25, 2021 3:12:46 PM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
+INFO: TracerResolver not configured, tracing is disabled
+maj 25, 2021 3:12:46 PM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
+WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
+maj 25, 2021 3:12:46 PM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
+maj 25, 2021 3:12:46 PM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
+maj 25, 2021 3:12:47 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
+maj 25, 2021 3:12:47 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
+maj 25, 2021 3:12:47 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+maj 25, 2021 3:12:47 PM com.zaxxer.hikari.HikariDataSource <init>
+INFO: HikariPool-1 - Starting...
+maj 25, 2021 3:12:48 PM com.zaxxer.hikari.HikariDataSource <init>
+INFO: HikariPool-1 - Start completed.
+maj 25, 2021 3:12:48 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+maj 25, 2021 3:12:49 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
+maj 25, 2021 3:12:49 PM io.helidon.microprofile.server.ServerCdiExtension addApplication
+INFO: Registering JAX-RS Application: Quiz_OP
+maj 25, 2021 3:12:50 PM org.glassfish.jersey.internal.Errors logErrors
+WARNING: The following warnings have been detected: WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.UserResource contains empty path annotation.
+WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.AdvertisementResource contains empty path annotation.
+
+maj 25, 2021 3:12:51 PM io.helidon.webserver.NettyWebServer lambda$start$7
+INFO: Channel '@default' started: [id: 0xe700854b, L:/0:0:0:0:0:0:0:0:8099]
+maj 25, 2021 3:12:51 PM io.helidon.microprofile.server.ServerCdiExtension startServer
+INFO: Server started on http://localhost:8099 (and all other host addresses) in 7603 milliseconds (since JVM startup).
+maj 25, 2021 3:12:51 PM io.helidon.common.HelidonFeatures features
+INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
+maj 25, 2021 3:13:00 PM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
+WARNING: Internal server error
+java.lang.IllegalArgumentException: Invalid UUID string: test
+	at java.base/java.util.UUID.fromString(UUID.java:215)
+	at dk.eaaa.domain.Id.<init>(Id.java:14)
+	at dk.eaaa.resource.Mapper.fromCreateUser(Mapper.java:78)
+	at dk.eaaa.resource.UserResource.createAdvertisement(UserResource.java:39)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createAdvertisement$$super(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.weld.interceptor.proxy.TerminalAroundInvokeInvocationContext.proceedInternal(TerminalAroundInvokeInvocationContext.java:51)
+	at org.jboss.weld.interceptor.proxy.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:78)
+	at io.helidon.microprofile.metrics.InterceptorSyntheticSimplyTimed.interceptRestEndpoint(InterceptorSyntheticSimplyTimed.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
+	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
+	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createAdvertisement(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:475)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:397)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:255)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:234)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+	at io.helidon.webserver.jersey.JerseySupport$JerseyHandler.lambda$doAccept$3(JerseySupport.java:293)
+	at io.helidon.common.context.Contexts.runInContext(Contexts.java:117)
+	at io.helidon.common.context.ContextAwareExecutorImpl.lambda$wrap$5(ContextAwareExecutorImpl.java:154)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Listening for transport dt_socket at address: 10099
+maj 25, 2021 3:17:46 PM io.helidon.common.LogConfig doConfigureLogging
+INFO: Logging at initialization configured using defaults
+maj 25, 2021 3:17:46 PM org.jboss.weld.bootstrap.WeldStartup <clinit>
+INFO: WELD-000900: 3.1.4 (Final)
+maj 25, 2021 3:17:47 PM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
+INFO: WELD-ENV-000020: Using jandex for bean discovery
+maj 25, 2021 3:17:47 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+maj 25, 2021 3:17:47 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+maj 25, 2021 3:17:49 PM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
+INFO: TracerResolver not configured, tracing is disabled
+maj 25, 2021 3:17:49 PM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
+WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
+maj 25, 2021 3:17:49 PM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
+maj 25, 2021 3:17:49 PM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
+maj 25, 2021 3:17:49 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
+maj 25, 2021 3:17:49 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
+maj 25, 2021 3:17:50 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+maj 25, 2021 3:17:50 PM com.zaxxer.hikari.HikariDataSource <init>
+INFO: HikariPool-1 - Starting...
+maj 25, 2021 3:17:50 PM com.zaxxer.hikari.HikariDataSource <init>
+INFO: HikariPool-1 - Start completed.
+maj 25, 2021 3:17:50 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+maj 25, 2021 3:17:52 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
+maj 25, 2021 3:17:52 PM io.helidon.microprofile.server.ServerCdiExtension addApplication
+INFO: Registering JAX-RS Application: Quiz_OP
+maj 25, 2021 3:17:53 PM org.glassfish.jersey.internal.Errors logErrors
+WARNING: The following warnings have been detected: WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.UserResource contains empty path annotation.
+WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.AdvertisementResource contains empty path annotation.
+
+maj 25, 2021 3:17:53 PM io.helidon.webserver.NettyWebServer lambda$start$7
+INFO: Channel '@default' started: [id: 0x7a8a2af2, L:/0:0:0:0:0:0:0:0:8099]
+maj 25, 2021 3:17:53 PM io.helidon.microprofile.server.ServerCdiExtension startServer
+INFO: Server started on http://localhost:8099 (and all other host addresses) in 8195 milliseconds (since JVM startup).
+maj 25, 2021 3:17:53 PM io.helidon.common.HelidonFeatures features
+INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
+maj 25, 2021 3:17:58 PM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
 WARNING: Internal server error
 javax.persistence.TransactionRequiredException
 	at io.helidon.integrations.cdi.jpa.NonTransactionalEntityManager.persist(NonTransactionalEntityManager.java:234)
 	at io.helidon.integrations.cdi.jpa.NonTransactionalEntityManager$Proxy$_$$_WeldClientProxy.persist(Unknown Source)
 	at io.helidon.integrations.cdi.jpa.DelegatingEntityManager.persist(DelegatingEntityManager.java:168)
 	at io.helidon.integrations.cdi.jpa.JpaTransactionScopedEntityManager.persist(JpaTransactionScopedEntityManager.java:343)
-	at dk.eaaa.repository.Repository.createAdvertisement(Repository.java:39)
-	at dk.eaaa.service.response.AdvertisementService.createAdvertisement(AdvertisementService.java:18)
-	at dk.eaaa.resource.AdvertisementResource.createAdvertisement(AdvertisementResource.java:35)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement$$super(Unknown Source)
+	at dk.eaaa.repository.Repository.CreateUser(Repository.java:37)
+	at dk.eaaa.service.response.UserService.createUser(UserService.java:22)
+	at dk.eaaa.resource.UserResource.createAdvertisement(UserResource.java:39)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createAdvertisement$$super(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -67,7 +452,7 @@ javax.persistence.TransactionRequiredException
 	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
 	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
 	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement(Unknown Source)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createAdvertisement(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -96,18 +481,62 @@ javax.persistence.TransactionRequiredException
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
 
-Hibernate: select userpo0_.Id as id1_0_0_, userpo0_.CITY_FK as city_fk2_0_0_, userpo0_.COMPANY_NAME as company_3_0_0_, userpo0_.CREATION_DATE as creation4_0_0_, userpo0_.EMAIL as email5_0_0_, userpo0_.FIRST_NAME as first_na6_0_0_, userpo0_.LAST_NAME as last_nam7_0_0_, userpo0_.PHONE_CODE as phone_co8_0_0_, userpo0_.PHONE_NUMBER as phone_nu9_0_0_, userpo0_.TYPE as type10_0_0_ from AD_USER userpo0_ where userpo0_.Id=?
-maj 25, 2021 10:33:36 AM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
+Listening for transport dt_socket at address: 10099
+maj 25, 2021 3:20:22 PM io.helidon.common.LogConfig doConfigureLogging
+INFO: Logging at initialization configured using defaults
+maj 25, 2021 3:20:22 PM org.jboss.weld.bootstrap.WeldStartup <clinit>
+INFO: WELD-000900: 3.1.4 (Final)
+maj 25, 2021 3:20:23 PM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
+INFO: WELD-ENV-000020: Using jandex for bean discovery
+maj 25, 2021 3:20:24 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+maj 25, 2021 3:20:24 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+maj 25, 2021 3:20:25 PM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
+INFO: TracerResolver not configured, tracing is disabled
+maj 25, 2021 3:20:25 PM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
+WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
+maj 25, 2021 3:20:25 PM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
+maj 25, 2021 3:20:25 PM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
+maj 25, 2021 3:20:26 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
+maj 25, 2021 3:20:26 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
+maj 25, 2021 3:20:26 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+maj 25, 2021 3:20:26 PM com.zaxxer.hikari.HikariDataSource <init>
+INFO: HikariPool-1 - Starting...
+maj 25, 2021 3:20:27 PM com.zaxxer.hikari.HikariDataSource <init>
+INFO: HikariPool-1 - Start completed.
+maj 25, 2021 3:20:27 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+maj 25, 2021 3:20:28 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
+maj 25, 2021 3:20:29 PM io.helidon.microprofile.server.ServerCdiExtension addApplication
+INFO: Registering JAX-RS Application: Quiz_OP
+maj 25, 2021 3:20:30 PM org.glassfish.jersey.internal.Errors logErrors
+WARNING: The following warnings have been detected: WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.UserResource contains empty path annotation.
+WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.AdvertisementResource contains empty path annotation.
+
+maj 25, 2021 3:20:30 PM io.helidon.webserver.NettyWebServer lambda$start$7
+INFO: Channel '@default' started: [id: 0xdddf5ecf, L:/0:0:0:0:0:0:0:0:8099]
+maj 25, 2021 3:20:30 PM io.helidon.microprofile.server.ServerCdiExtension startServer
+INFO: Server started on http://localhost:8099 (and all other host addresses) in 8471 milliseconds (since JVM startup).
+maj 25, 2021 3:20:30 PM io.helidon.common.HelidonFeatures features
+INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
+maj 25, 2021 3:20:49 PM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
 WARNING: Internal server error
 javax.persistence.TransactionRequiredException
 	at io.helidon.integrations.cdi.jpa.NonTransactionalEntityManager.persist(NonTransactionalEntityManager.java:234)
 	at io.helidon.integrations.cdi.jpa.NonTransactionalEntityManager$Proxy$_$$_WeldClientProxy.persist(Unknown Source)
 	at io.helidon.integrations.cdi.jpa.DelegatingEntityManager.persist(DelegatingEntityManager.java:168)
 	at io.helidon.integrations.cdi.jpa.JpaTransactionScopedEntityManager.persist(JpaTransactionScopedEntityManager.java:343)
-	at dk.eaaa.repository.Repository.createAdvertisement(Repository.java:39)
-	at dk.eaaa.service.response.AdvertisementService.createAdvertisement(AdvertisementService.java:18)
-	at dk.eaaa.resource.AdvertisementResource.createAdvertisement(AdvertisementResource.java:35)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement$$super(Unknown Source)
+	at dk.eaaa.repository.Repository.CreateUser(Repository.java:37)
+	at dk.eaaa.service.response.UserService.createUser(UserService.java:22)
+	at dk.eaaa.resource.UserResource.createAdvertisement(UserResource.java:39)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createAdvertisement$$super(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -125,7 +554,7 @@ javax.persistence.TransactionRequiredException
 	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
 	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
 	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement(Unknown Source)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createAdvertisement(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -154,17 +583,62 @@ javax.persistence.TransactionRequiredException
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
 
-maj 25, 2021 10:35:50 AM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
+Listening for transport dt_socket at address: 10099
+maj 25, 2021 3:23:41 PM io.helidon.common.LogConfig doConfigureLogging
+INFO: Logging at initialization configured using defaults
+maj 25, 2021 3:23:41 PM org.jboss.weld.bootstrap.WeldStartup <clinit>
+INFO: WELD-000900: 3.1.4 (Final)
+maj 25, 2021 3:23:42 PM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
+INFO: WELD-ENV-000020: Using jandex for bean discovery
+maj 25, 2021 3:23:42 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+maj 25, 2021 3:23:42 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+maj 25, 2021 3:23:44 PM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
+INFO: TracerResolver not configured, tracing is disabled
+maj 25, 2021 3:23:44 PM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
+WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
+maj 25, 2021 3:23:44 PM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
+maj 25, 2021 3:23:44 PM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
+maj 25, 2021 3:23:44 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
+maj 25, 2021 3:23:44 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
+maj 25, 2021 3:23:45 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+maj 25, 2021 3:23:45 PM com.zaxxer.hikari.HikariDataSource <init>
+INFO: HikariPool-1 - Starting...
+maj 25, 2021 3:23:46 PM com.zaxxer.hikari.HikariDataSource <init>
+INFO: HikariPool-1 - Start completed.
+maj 25, 2021 3:23:46 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+maj 25, 2021 3:23:47 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
+maj 25, 2021 3:23:47 PM io.helidon.microprofile.server.ServerCdiExtension addApplication
+INFO: Registering JAX-RS Application: Quiz_OP
+maj 25, 2021 3:23:48 PM org.glassfish.jersey.internal.Errors logErrors
+WARNING: The following warnings have been detected: WARNING: The (sub)resource method createUser in dk.eaaa.resource.UserResource contains empty path annotation.
+WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.AdvertisementResource contains empty path annotation.
+
+maj 25, 2021 3:23:48 PM io.helidon.webserver.NettyWebServer lambda$start$7
+INFO: Channel '@default' started: [id: 0x3384dbad, L:/0:0:0:0:0:0:0:0:8099]
+maj 25, 2021 3:23:48 PM io.helidon.microprofile.server.ServerCdiExtension startServer
+INFO: Server started on http://localhost:8099 (and all other host addresses) in 8188 milliseconds (since JVM startup).
+maj 25, 2021 3:23:48 PM io.helidon.common.HelidonFeatures features
+INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
+maj 25, 2021 3:24:04 PM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
 WARNING: Internal server error
 javax.persistence.TransactionRequiredException
 	at io.helidon.integrations.cdi.jpa.NonTransactionalEntityManager.persist(NonTransactionalEntityManager.java:234)
 	at io.helidon.integrations.cdi.jpa.NonTransactionalEntityManager$Proxy$_$$_WeldClientProxy.persist(Unknown Source)
 	at io.helidon.integrations.cdi.jpa.DelegatingEntityManager.persist(DelegatingEntityManager.java:168)
 	at io.helidon.integrations.cdi.jpa.JpaTransactionScopedEntityManager.persist(JpaTransactionScopedEntityManager.java:343)
-	at dk.eaaa.repository.Repository.createAdvertisement(Repository.java:39)
-	at dk.eaaa.service.response.AdvertisementService.createAdvertisement(AdvertisementService.java:18)
-	at dk.eaaa.resource.AdvertisementResource.createAdvertisement(AdvertisementResource.java:35)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement$$super(Unknown Source)
+	at dk.eaaa.repository.Repository.CreateUser(Repository.java:37)
+	at dk.eaaa.service.response.UserService.createUser(UserService.java:22)
+	at dk.eaaa.resource.UserResource.createUser(UserResource.java:39)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createUser$$super(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -182,7 +656,7 @@ javax.persistence.TransactionRequiredException
 	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
 	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
 	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement(Unknown Source)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createUser(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -212,57 +686,61 @@ javax.persistence.TransactionRequiredException
 	at java.base/java.lang.Thread.run(Thread.java:829)
 
 Listening for transport dt_socket at address: 10099
-maj 25, 2021 10:37:14 AM io.helidon.common.LogConfig doConfigureLogging
+maj 25, 2021 3:28:05 PM io.helidon.common.LogConfig doConfigureLogging
 INFO: Logging at initialization configured using defaults
-maj 25, 2021 10:37:14 AM org.jboss.weld.bootstrap.WeldStartup <clinit>
+maj 25, 2021 3:28:05 PM org.jboss.weld.bootstrap.WeldStartup <clinit>
 INFO: WELD-000900: 3.1.4 (Final)
-maj 25, 2021 10:37:15 AM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
+maj 25, 2021 3:28:06 PM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
 INFO: WELD-ENV-000020: Using jandex for bean discovery
-maj 25, 2021 10:37:16 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+maj 25, 2021 3:28:06 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
 INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 10:37:16 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+maj 25, 2021 3:28:06 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
 INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 10:37:17 AM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
+maj 25, 2021 3:28:08 PM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
 INFO: TracerResolver not configured, tracing is disabled
-maj 25, 2021 10:37:17 AM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
+maj 25, 2021 3:28:08 PM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
 WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
-maj 25, 2021 10:37:17 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+maj 25, 2021 3:28:08 PM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
 INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
-maj 25, 2021 10:37:17 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
+maj 25, 2021 3:28:08 PM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
 INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
-maj 25, 2021 10:37:18 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+maj 25, 2021 3:28:08 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
-maj 25, 2021 10:37:18 AM org.hibernate.Version logVersion
+maj 25, 2021 3:28:08 PM org.hibernate.Version logVersion
 INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
-maj 25, 2021 10:37:18 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+maj 25, 2021 3:28:09 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
 INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-maj 25, 2021 10:37:19 AM com.zaxxer.hikari.HikariDataSource <init>
+maj 25, 2021 3:28:09 PM com.zaxxer.hikari.HikariDataSource <init>
 INFO: HikariPool-1 - Starting...
-maj 25, 2021 10:37:19 AM com.zaxxer.hikari.HikariDataSource <init>
+maj 25, 2021 3:28:09 PM com.zaxxer.hikari.HikariDataSource <init>
 INFO: HikariPool-1 - Start completed.
-maj 25, 2021 10:37:19 AM org.hibernate.dialect.Dialect <init>
+maj 25, 2021 3:28:09 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
-maj 25, 2021 10:37:20 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+maj 25, 2021 3:28:10 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
 INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
-maj 25, 2021 10:37:20 AM io.helidon.microprofile.server.ServerCdiExtension addApplication
+maj 25, 2021 3:28:11 PM io.helidon.microprofile.server.ServerCdiExtension addApplication
 INFO: Registering JAX-RS Application: Quiz_OP
-maj 25, 2021 10:37:22 AM io.helidon.webserver.NettyWebServer lambda$start$7
-INFO: Channel '@default' started: [id: 0xcb698fb4, L:/0:0:0:0:0:0:0:0:8099]
-maj 25, 2021 10:37:22 AM io.helidon.microprofile.server.ServerCdiExtension startServer
-INFO: Server started on http://localhost:8099 (and all other host addresses) in 8594 milliseconds (since JVM startup).
-maj 25, 2021 10:37:22 AM io.helidon.common.HelidonFeatures features
+maj 25, 2021 3:28:11 PM org.glassfish.jersey.internal.Errors logErrors
+WARNING: The following warnings have been detected: WARNING: The (sub)resource method createUser in dk.eaaa.resource.UserResource contains empty path annotation.
+WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.AdvertisementResource contains empty path annotation.
+
+maj 25, 2021 3:28:12 PM io.helidon.webserver.NettyWebServer lambda$start$7
+INFO: Channel '@default' started: [id: 0x47c52a92, L:/0:0:0:0:0:0:0:0:8099]
+maj 25, 2021 3:28:12 PM io.helidon.microprofile.server.ServerCdiExtension startServer
+INFO: Server started on http://localhost:8099 (and all other host addresses) in 7378 milliseconds (since JVM startup).
+maj 25, 2021 3:28:12 PM io.helidon.common.HelidonFeatures features
 INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
-maj 25, 2021 10:38:44 AM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
+maj 25, 2021 3:28:16 PM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
 WARNING: Internal server error
 javax.persistence.TransactionRequiredException
 	at io.helidon.integrations.cdi.jpa.NonTransactionalEntityManager.persist(NonTransactionalEntityManager.java:234)
 	at io.helidon.integrations.cdi.jpa.NonTransactionalEntityManager$Proxy$_$$_WeldClientProxy.persist(Unknown Source)
 	at io.helidon.integrations.cdi.jpa.DelegatingEntityManager.persist(DelegatingEntityManager.java:168)
 	at io.helidon.integrations.cdi.jpa.JpaTransactionScopedEntityManager.persist(JpaTransactionScopedEntityManager.java:343)
-	at dk.eaaa.repository.Repository.createAdvertisement(Repository.java:39)
-	at dk.eaaa.service.response.AdvertisementService.createAdvertisement(AdvertisementService.java:18)
-	at dk.eaaa.resource.AdvertisementResource.createAdvertisement(AdvertisementResource.java:34)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement$$super(Unknown Source)
+	at dk.eaaa.repository.Repository.CreateUser(Repository.java:36)
+	at dk.eaaa.service.response.UserService.createUser(UserService.java:22)
+	at dk.eaaa.resource.UserResource.createUser(UserResource.java:39)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createUser$$super(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -280,7 +758,7 @@ javax.persistence.TransactionRequiredException
 	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
 	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
 	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement(Unknown Source)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createUser(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -309,140 +787,17 @@ javax.persistence.TransactionRequiredException
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
 
-Listening for transport dt_socket at address: 10099
-maj 25, 2021 11:01:12 AM io.helidon.common.LogConfig doConfigureLogging
-INFO: Logging at initialization configured using defaults
-maj 25, 2021 11:01:12 AM org.jboss.weld.bootstrap.WeldStartup <clinit>
-INFO: WELD-000900: 3.1.4 (Final)
-maj 25, 2021 11:01:13 AM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
-INFO: WELD-ENV-000020: Using jandex for bean discovery
-maj 25, 2021 11:01:13 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:01:13 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:01:15 AM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
-INFO: TracerResolver not configured, tracing is disabled
-maj 25, 2021 11:01:15 AM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
-WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
-maj 25, 2021 11:01:15 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
-maj 25, 2021 11:01:15 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
-maj 25, 2021 11:01:16 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
-INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
-maj 25, 2021 11:01:16 AM org.hibernate.Version logVersion
-INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
-maj 25, 2021 11:01:16 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
-INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-maj 25, 2021 11:01:16 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Starting...
-maj 25, 2021 11:01:17 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Start completed.
-maj 25, 2021 11:01:17 AM org.hibernate.dialect.Dialect <init>
-INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
-maj 25, 2021 11:01:18 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
-INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
-maj 25, 2021 11:01:19 AM io.helidon.microprofile.server.ServerCdiExtension addApplication
-INFO: Registering JAX-RS Application: Quiz_OP
-maj 25, 2021 11:01:20 AM io.helidon.webserver.NettyWebServer lambda$start$7
-INFO: Channel '@default' started: [id: 0xbe45c18c, L:/0:0:0:0:0:0:0:0:8099]
-maj 25, 2021 11:01:20 AM io.helidon.microprofile.server.ServerCdiExtension startServer
-INFO: Server started on http://localhost:8099 (and all other host addresses) in 8819 milliseconds (since JVM startup).
-maj 25, 2021 11:01:20 AM io.helidon.common.HelidonFeatures features
-INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
-Listening for transport dt_socket at address: 10099
-maj 25, 2021 11:03:37 AM io.helidon.common.LogConfig doConfigureLogging
-INFO: Logging at initialization configured using defaults
-maj 25, 2021 11:03:37 AM org.jboss.weld.bootstrap.WeldStartup <clinit>
-INFO: WELD-000900: 3.1.4 (Final)
-maj 25, 2021 11:03:38 AM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
-INFO: WELD-ENV-000020: Using jandex for bean discovery
-maj 25, 2021 11:03:39 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:03:39 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:03:40 AM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
-INFO: TracerResolver not configured, tracing is disabled
-maj 25, 2021 11:03:40 AM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
-WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
-maj 25, 2021 11:03:40 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
-maj 25, 2021 11:03:40 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
-maj 25, 2021 11:03:41 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
-INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
-maj 25, 2021 11:03:41 AM org.hibernate.Version logVersion
-INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
-maj 25, 2021 11:03:41 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
-INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-maj 25, 2021 11:03:41 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Starting...
-maj 25, 2021 11:03:42 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Start completed.
-maj 25, 2021 11:03:42 AM org.hibernate.dialect.Dialect <init>
-INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
-maj 25, 2021 11:03:43 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
-INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
-maj 25, 2021 11:03:43 AM io.helidon.microprofile.server.ServerCdiExtension addApplication
-INFO: Registering JAX-RS Application: Quiz_OP
-maj 25, 2021 11:03:45 AM io.helidon.webserver.NettyWebServer lambda$start$7
-INFO: Channel '@default' started: [id: 0x31664f54, L:/0:0:0:0:0:0:0:0:8099]
-maj 25, 2021 11:03:45 AM io.helidon.microprofile.server.ServerCdiExtension startServer
-INFO: Server started on http://localhost:8099 (and all other host addresses) in 8571 milliseconds (since JVM startup).
-maj 25, 2021 11:03:45 AM io.helidon.common.HelidonFeatures features
-INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
-Listening for transport dt_socket at address: 10099
-maj 25, 2021 11:09:01 AM io.helidon.common.LogConfig doConfigureLogging
-INFO: Logging at initialization configured using defaults
-maj 25, 2021 11:09:01 AM org.jboss.weld.bootstrap.WeldStartup <clinit>
-INFO: WELD-000900: 3.1.4 (Final)
-maj 25, 2021 11:09:02 AM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
-INFO: WELD-ENV-000020: Using jandex for bean discovery
-maj 25, 2021 11:09:03 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:09:03 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:09:05 AM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
-INFO: TracerResolver not configured, tracing is disabled
-maj 25, 2021 11:09:05 AM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
-WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
-maj 25, 2021 11:09:05 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
-maj 25, 2021 11:09:05 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
-maj 25, 2021 11:09:05 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
-INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
-maj 25, 2021 11:09:06 AM org.hibernate.Version logVersion
-INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
-maj 25, 2021 11:09:06 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
-INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-maj 25, 2021 11:09:06 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Starting...
-maj 25, 2021 11:09:07 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Start completed.
-maj 25, 2021 11:09:07 AM org.hibernate.dialect.Dialect <init>
-INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
-maj 25, 2021 11:09:07 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
-INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
-maj 25, 2021 11:09:08 AM io.helidon.microprofile.server.ServerCdiExtension addApplication
-INFO: Registering JAX-RS Application: Quiz_OP
-maj 25, 2021 11:09:10 AM io.helidon.webserver.NettyWebServer lambda$start$7
-INFO: Channel '@default' started: [id: 0x61e161b3, L:/0:0:0:0:0:0:0:0:8099]
-maj 25, 2021 11:09:10 AM io.helidon.microprofile.server.ServerCdiExtension startServer
-INFO: Server started on http://localhost:8099 (and all other host addresses) in 8541 milliseconds (since JVM startup).
-maj 25, 2021 11:09:10 AM io.helidon.common.HelidonFeatures features
-INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
-maj 25, 2021 11:09:11 AM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
+maj 25, 2021 3:29:21 PM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
 WARNING: Internal server error
 javax.persistence.TransactionRequiredException
 	at io.helidon.integrations.cdi.jpa.NonTransactionalEntityManager.persist(NonTransactionalEntityManager.java:234)
 	at io.helidon.integrations.cdi.jpa.NonTransactionalEntityManager$Proxy$_$$_WeldClientProxy.persist(Unknown Source)
 	at io.helidon.integrations.cdi.jpa.DelegatingEntityManager.persist(DelegatingEntityManager.java:168)
 	at io.helidon.integrations.cdi.jpa.JpaTransactionScopedEntityManager.persist(JpaTransactionScopedEntityManager.java:343)
-	at dk.eaaa.repository.Repository.createAdvertisement(Repository.java:41)
-	at dk.eaaa.service.response.AdvertisementService.createAdvertisement(AdvertisementService.java:20)
-	at dk.eaaa.resource.AdvertisementResource.createAdvertisement(AdvertisementResource.java:33)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement$$super(Unknown Source)
+	at dk.eaaa.repository.Repository.CreateUser(Repository.java:36)
+	at dk.eaaa.service.response.UserService.createUser(UserService.java:22)
+	at dk.eaaa.resource.UserResource.createUser(UserResource.java:39)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createUser$$super(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -460,7 +815,7 @@ javax.persistence.TransactionRequiredException
 	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
 	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
 	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement(Unknown Source)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createUser(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -489,58 +844,19 @@ javax.persistence.TransactionRequiredException
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
 
-Listening for transport dt_socket at address: 10099
-maj 25, 2021 11:16:33 AM io.helidon.common.LogConfig doConfigureLogging
-INFO: Logging at initialization configured using defaults
-maj 25, 2021 11:16:33 AM org.jboss.weld.bootstrap.WeldStartup <clinit>
-INFO: WELD-000900: 3.1.4 (Final)
-maj 25, 2021 11:16:34 AM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
-INFO: WELD-ENV-000020: Using jandex for bean discovery
-maj 25, 2021 11:16:35 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:16:35 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:16:37 AM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
-INFO: TracerResolver not configured, tracing is disabled
-maj 25, 2021 11:16:37 AM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
-WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
-maj 25, 2021 11:16:37 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
-maj 25, 2021 11:16:37 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
-maj 25, 2021 11:16:38 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
-INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
-maj 25, 2021 11:16:38 AM org.hibernate.Version logVersion
-INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
-maj 25, 2021 11:16:38 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
-INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-maj 25, 2021 11:16:38 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Starting...
-maj 25, 2021 11:16:39 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Start completed.
-maj 25, 2021 11:16:39 AM org.hibernate.dialect.Dialect <init>
-INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
-maj 25, 2021 11:16:40 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
-INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
-maj 25, 2021 11:16:41 AM io.helidon.microprofile.server.ServerCdiExtension addApplication
-INFO: Registering JAX-RS Application: Quiz_OP
-maj 25, 2021 11:16:42 AM io.helidon.webserver.NettyWebServer lambda$start$7
-INFO: Channel '@default' started: [id: 0x9499c929, L:/0:0:0:0:0:0:0:0:8099]
-maj 25, 2021 11:16:42 AM io.helidon.microprofile.server.ServerCdiExtension startServer
-INFO: Server started on http://localhost:8099 (and all other host addresses) in 9808 milliseconds (since JVM startup).
-maj 25, 2021 11:16:42 AM io.helidon.common.HelidonFeatures features
-INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
-maj 25, 2021 11:16:43 AM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
+maj 25, 2021 3:34:03 PM com.zaxxer.hikari.pool.HikariPool$HouseKeeper run
+WARNING: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s725ms714µs800ns).
+maj 25, 2021 3:34:03 PM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
 WARNING: Internal server error
 javax.persistence.TransactionRequiredException
 	at io.helidon.integrations.cdi.jpa.NonTransactionalEntityManager.persist(NonTransactionalEntityManager.java:234)
 	at io.helidon.integrations.cdi.jpa.NonTransactionalEntityManager$Proxy$_$$_WeldClientProxy.persist(Unknown Source)
 	at io.helidon.integrations.cdi.jpa.DelegatingEntityManager.persist(DelegatingEntityManager.java:168)
 	at io.helidon.integrations.cdi.jpa.JpaTransactionScopedEntityManager.persist(JpaTransactionScopedEntityManager.java:343)
-	at dk.eaaa.repository.Repository.createAdvertisement(Repository.java:41)
-	at dk.eaaa.service.response.AdvertisementService.createAdvertisement(AdvertisementService.java:20)
-	at dk.eaaa.resource.AdvertisementResource.createAdvertisement(AdvertisementResource.java:33)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement$$super(Unknown Source)
+	at dk.eaaa.repository.Repository.CreateUser(Repository.java:36)
+	at dk.eaaa.service.response.UserService.createUser(UserService.java:22)
+	at dk.eaaa.resource.UserResource.createUser(UserResource.java:39)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createUser$$super(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -558,7 +874,7 @@ javax.persistence.TransactionRequiredException
 	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
 	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
 	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement(Unknown Source)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createUser(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -587,159 +903,18 @@ javax.persistence.TransactionRequiredException
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
 
-ERROR: transport error 202: bind failed: Address already in use
-ERROR: JDWP Transport dt_socket failed to initialize, TRANSPORT_INIT(510)
-JDWP exit error AGENT_ERROR_TRANSPORT_INIT(197): No transports initialized [./src/jdk.jdwp.agent/share/native/libjdwp/debugInit.c:735]
-ERROR: transport error 202: bind failed: Address already in use
-ERROR: JDWP Transport dt_socket failed to initialize, TRANSPORT_INIT(510)
-JDWP exit error AGENT_ERROR_TRANSPORT_INIT(197): No transports initialized [./src/jdk.jdwp.agent/share/native/libjdwp/debugInit.c:735]
 Listening for transport dt_socket at address: 10099
-maj 25, 2021 11:40:17 AM io.helidon.common.LogConfig doConfigureLogging
-INFO: Logging at initialization configured using defaults
-maj 25, 2021 11:40:17 AM org.jboss.weld.bootstrap.WeldStartup <clinit>
-INFO: WELD-000900: 3.1.4 (Final)
-maj 25, 2021 11:40:18 AM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
-INFO: WELD-ENV-000020: Using jandex for bean discovery
-maj 25, 2021 11:40:18 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:40:18 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:40:20 AM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
-INFO: TracerResolver not configured, tracing is disabled
-maj 25, 2021 11:40:20 AM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
-WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
-maj 25, 2021 11:40:20 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
-maj 25, 2021 11:40:20 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
-maj 25, 2021 11:40:21 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
-INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
-maj 25, 2021 11:40:21 AM org.hibernate.Version logVersion
-INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
-maj 25, 2021 11:40:21 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
-INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-maj 25, 2021 11:40:21 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Starting...
-maj 25, 2021 11:40:22 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Start completed.
-maj 25, 2021 11:40:22 AM org.hibernate.dialect.Dialect <init>
-INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
-maj 25, 2021 11:40:23 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
-INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
-maj 25, 2021 11:40:24 AM io.helidon.microprofile.server.ServerCdiExtension addApplication
-INFO: Registering JAX-RS Application: Quiz_OP
-maj 25, 2021 11:40:25 AM org.glassfish.jersey.internal.Errors logErrors
-WARNING: The following warnings have been detected: WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.AdvertisementResource contains empty path annotation.
-
-maj 25, 2021 11:40:25 AM io.helidon.webserver.NettyWebServer lambda$start$7
-INFO: Channel '@default' started: [id: 0x49e51afe, L:/0:0:0:0:0:0:0:0:8099]
-maj 25, 2021 11:40:25 AM io.helidon.microprofile.server.ServerCdiExtension startServer
-INFO: Server started on http://localhost:8099 (and all other host addresses) in 9324 milliseconds (since JVM startup).
-maj 25, 2021 11:40:25 AM io.helidon.common.HelidonFeatures features
-INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
-Listening for transport dt_socket at address: 10099
-maj 25, 2021 11:41:41 AM io.helidon.common.LogConfig doConfigureLogging
-INFO: Logging at initialization configured using defaults
-maj 25, 2021 11:41:41 AM org.jboss.weld.bootstrap.WeldStartup <clinit>
-INFO: WELD-000900: 3.1.4 (Final)
-maj 25, 2021 11:41:42 AM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
-INFO: WELD-ENV-000020: Using jandex for bean discovery
-maj 25, 2021 11:41:43 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:41:43 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:41:46 AM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
-INFO: TracerResolver not configured, tracing is disabled
-maj 25, 2021 11:41:46 AM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
-WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
-maj 25, 2021 11:41:46 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
-maj 25, 2021 11:41:46 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
-maj 25, 2021 11:41:46 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
-INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
-maj 25, 2021 11:41:46 AM org.hibernate.Version logVersion
-INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
-maj 25, 2021 11:41:47 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
-INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-maj 25, 2021 11:41:47 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Starting...
-maj 25, 2021 11:41:48 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Start completed.
-maj 25, 2021 11:41:48 AM org.hibernate.dialect.Dialect <init>
-INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
-maj 25, 2021 11:41:49 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
-INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
-maj 25, 2021 11:41:49 AM io.helidon.microprofile.server.ServerCdiExtension addApplication
-INFO: Registering JAX-RS Application: Quiz_OP
-maj 25, 2021 11:41:50 AM org.glassfish.jersey.internal.Errors logErrors
-WARNING: The following warnings have been detected: WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.AdvertisementResource contains empty path annotation.
-
-maj 25, 2021 11:41:51 AM io.helidon.webserver.NettyWebServer lambda$start$7
-INFO: Channel '@default' started: [id: 0xe256812a, L:/0:0:0:0:0:0:0:0:8099]
-maj 25, 2021 11:41:51 AM io.helidon.microprofile.server.ServerCdiExtension startServer
-INFO: Server started on http://localhost:8099 (and all other host addresses) in 9898 milliseconds (since JVM startup).
-maj 25, 2021 11:41:51 AM io.helidon.common.HelidonFeatures features
-INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
-Listening for transport dt_socket at address: 10099
-maj 25, 2021 11:44:36 AM io.helidon.common.LogConfig doConfigureLogging
-INFO: Logging at initialization configured using defaults
-maj 25, 2021 11:44:36 AM org.jboss.weld.bootstrap.WeldStartup <clinit>
-INFO: WELD-000900: 3.1.4 (Final)
-maj 25, 2021 11:44:37 AM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
-INFO: WELD-ENV-000020: Using jandex for bean discovery
-maj 25, 2021 11:44:38 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:44:38 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:44:39 AM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
-INFO: TracerResolver not configured, tracing is disabled
-maj 25, 2021 11:44:39 AM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
-WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
-maj 25, 2021 11:44:39 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
-maj 25, 2021 11:44:39 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
-maj 25, 2021 11:44:40 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
-INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
-maj 25, 2021 11:44:40 AM org.hibernate.Version logVersion
-INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
-maj 25, 2021 11:44:41 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
-INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-maj 25, 2021 11:44:41 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Starting...
-maj 25, 2021 11:44:42 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Start completed.
-maj 25, 2021 11:44:42 AM org.hibernate.dialect.Dialect <init>
-INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
-maj 25, 2021 11:44:43 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
-INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
-maj 25, 2021 11:44:43 AM io.helidon.microprofile.server.ServerCdiExtension addApplication
-INFO: Registering JAX-RS Application: Quiz_OP
-maj 25, 2021 11:44:44 AM org.glassfish.jersey.internal.Errors logErrors
-WARNING: The following warnings have been detected: WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.AdvertisementResource contains empty path annotation.
-
-maj 25, 2021 11:44:45 AM io.helidon.webserver.NettyWebServer lambda$start$7
-INFO: Channel '@default' started: [id: 0x89bc1e13, L:/0:0:0:0:0:0:0:0:8099]
-maj 25, 2021 11:44:45 AM io.helidon.microprofile.server.ServerCdiExtension startServer
-INFO: Server started on http://localhost:8099 (and all other host addresses) in 9741 milliseconds (since JVM startup).
-maj 25, 2021 11:44:45 AM io.helidon.common.HelidonFeatures features
-INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
-maj 25, 2021 11:46:39 AM com.zaxxer.hikari.pool.HikariPool$HouseKeeper run
-WARNING: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m57s465ms700µs100ns).
-Listening for transport dt_socket at address: 10099
-Hibernate: select userpo0_.Id as id1_0_0_, userpo0_.CITY_FK as city_fk2_0_0_, userpo0_.COMPANY_NAME as company_3_0_0_, userpo0_.CREATION_DATE as creation4_0_0_, userpo0_.EMAIL as email5_0_0_, userpo0_.FIRST_NAME as first_na6_0_0_, userpo0_.LAST_NAME as last_nam7_0_0_, userpo0_.PHONE_CODE as phone_co8_0_0_, userpo0_.PHONE_NUMBER as phone_nu9_0_0_, userpo0_.TYPE as type10_0_0_ from AD_USER userpo0_ where userpo0_.Id=?
-maj 25, 2021 11:46:39 AM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
+maj 25, 2021 3:42:11 PM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
 WARNING: Internal server error
 javax.persistence.TransactionRequiredException
 	at io.helidon.integrations.cdi.jpa.NonTransactionalEntityManager.persist(NonTransactionalEntityManager.java:234)
 	at io.helidon.integrations.cdi.jpa.NonTransactionalEntityManager$Proxy$_$$_WeldClientProxy.persist(Unknown Source)
 	at io.helidon.integrations.cdi.jpa.DelegatingEntityManager.persist(DelegatingEntityManager.java:168)
 	at io.helidon.integrations.cdi.jpa.JpaTransactionScopedEntityManager.persist(JpaTransactionScopedEntityManager.java:343)
-	at dk.eaaa.repository.Repository.createAdvertisement(Repository.java:43)
-	at dk.eaaa.service.response.AdvertisementService.createAdvertisement(AdvertisementService.java:20)
-	at dk.eaaa.resource.AdvertisementResource.createAdvertisement(AdvertisementResource.java:33)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement$$super(Unknown Source)
+	at dk.eaaa.repository.Repository.CreateUser(Repository.java:36)
+	at dk.eaaa.service.response.UserService.createUser(UserService.java:22)
+	at dk.eaaa.resource.UserResource.createUser(UserResource.java:39)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createUser$$super(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -757,7 +932,7 @@ javax.persistence.TransactionRequiredException
 	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
 	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
 	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement(Unknown Source)
+	at dk.eaaa.resource.UserResource$Proxy$_$$_WeldSubclass.createUser(Unknown Source)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -786,448 +961,7 @@ javax.persistence.TransactionRequiredException
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
 
-Listening for transport dt_socket at address: 10099
-maj 25, 2021 11:48:34 AM io.helidon.common.LogConfig doConfigureLogging
-INFO: Logging at initialization configured using defaults
-maj 25, 2021 11:48:34 AM org.jboss.weld.bootstrap.WeldStartup <clinit>
-INFO: WELD-000900: 3.1.4 (Final)
-maj 25, 2021 11:48:35 AM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
-INFO: WELD-ENV-000020: Using jandex for bean discovery
-maj 25, 2021 11:48:36 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:48:36 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:48:38 AM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
-INFO: TracerResolver not configured, tracing is disabled
-maj 25, 2021 11:48:38 AM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
-WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
-maj 25, 2021 11:48:38 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
-maj 25, 2021 11:48:38 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
-maj 25, 2021 11:48:38 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
-INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
-maj 25, 2021 11:48:39 AM org.hibernate.Version logVersion
-INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
-maj 25, 2021 11:48:39 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
-INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-maj 25, 2021 11:48:39 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Starting...
-maj 25, 2021 11:48:39 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Start completed.
-maj 25, 2021 11:48:39 AM org.hibernate.dialect.Dialect <init>
-INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
-maj 25, 2021 11:48:41 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
-INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
-maj 25, 2021 11:48:41 AM io.helidon.microprofile.server.ServerCdiExtension addApplication
-INFO: Registering JAX-RS Application: Quiz_OP
-maj 25, 2021 11:48:42 AM org.glassfish.jersey.internal.Errors logErrors
-WARNING: The following warnings have been detected: WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.AdvertisementResource contains empty path annotation.
-
-maj 25, 2021 11:48:43 AM io.helidon.webserver.NettyWebServer lambda$start$7
-INFO: Channel '@default' started: [id: 0x7f87fd55, L:/0:0:0:0:0:0:0:0:8099]
-maj 25, 2021 11:48:43 AM io.helidon.microprofile.server.ServerCdiExtension startServer
-INFO: Server started on http://localhost:8099 (and all other host addresses) in 9447 milliseconds (since JVM startup).
-maj 25, 2021 11:48:43 AM io.helidon.common.HelidonFeatures features
-INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
-Hibernate: select userpo0_.Id as id1_0_0_, userpo0_.CITY_FK as city_fk2_0_0_, userpo0_.COMPANY_NAME as company_3_0_0_, userpo0_.CREATION_DATE as creation4_0_0_, userpo0_.EMAIL as email5_0_0_, userpo0_.FIRST_NAME as first_na6_0_0_, userpo0_.LAST_NAME as last_nam7_0_0_, userpo0_.PHONE_CODE as phone_co8_0_0_, userpo0_.PHONE_NUMBER as phone_nu9_0_0_, userpo0_.TYPE as type10_0_0_ from AD_USER userpo0_ where userpo0_.Id=?
-maj 25, 2021 11:48:44 AM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
-WARNING: Internal server error
-javax.persistence.TransactionRequiredException
-	at io.helidon.integrations.cdi.jpa.NonTransactionalEntityManager.persist(NonTransactionalEntityManager.java:234)
-	at io.helidon.integrations.cdi.jpa.NonTransactionalEntityManager$Proxy$_$$_WeldClientProxy.persist(Unknown Source)
-	at io.helidon.integrations.cdi.jpa.DelegatingEntityManager.persist(DelegatingEntityManager.java:168)
-	at io.helidon.integrations.cdi.jpa.JpaTransactionScopedEntityManager.persist(JpaTransactionScopedEntityManager.java:343)
-	at dk.eaaa.repository.Repository.createAdvertisement(Repository.java:43)
-	at dk.eaaa.service.response.AdvertisementService.createAdvertisement(AdvertisementService.java:20)
-	at dk.eaaa.resource.AdvertisementResource.createAdvertisement(AdvertisementResource.java:33)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement$$super(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.jboss.weld.interceptor.proxy.TerminalAroundInvokeInvocationContext.proceedInternal(TerminalAroundInvokeInvocationContext.java:51)
-	at org.jboss.weld.interceptor.proxy.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:78)
-	at io.helidon.microprofile.metrics.InterceptorSyntheticSimplyTimed.interceptRestEndpoint(InterceptorSyntheticSimplyTimed.java:64)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
-	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
-	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
-	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
-	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
-	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
-	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
-	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
-	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
-	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
-	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:475)
-	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:397)
-	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
-	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:255)
-	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
-	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
-	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
-	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
-	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
-	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
-	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:234)
-	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
-	at io.helidon.webserver.jersey.JerseySupport$JerseyHandler.lambda$doAccept$3(JerseySupport.java:293)
-	at io.helidon.common.context.Contexts.runInContext(Contexts.java:117)
-	at io.helidon.common.context.ContextAwareExecutorImpl.lambda$wrap$5(ContextAwareExecutorImpl.java:154)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-
-Listening for transport dt_socket at address: 10099
-maj 25, 2021 11:50:05 AM io.helidon.common.LogConfig doConfigureLogging
-INFO: Logging at initialization configured using defaults
-maj 25, 2021 11:50:05 AM org.jboss.weld.bootstrap.WeldStartup <clinit>
-INFO: WELD-000900: 3.1.4 (Final)
-maj 25, 2021 11:50:06 AM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
-INFO: WELD-ENV-000020: Using jandex for bean discovery
-maj 25, 2021 11:50:07 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:50:07 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:50:09 AM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
-INFO: TracerResolver not configured, tracing is disabled
-maj 25, 2021 11:50:09 AM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
-WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
-maj 25, 2021 11:50:09 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
-maj 25, 2021 11:50:09 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
-maj 25, 2021 11:50:10 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
-INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
-maj 25, 2021 11:50:10 AM org.hibernate.Version logVersion
-INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
-maj 25, 2021 11:50:11 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
-INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-maj 25, 2021 11:50:11 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Starting...
-maj 25, 2021 11:50:12 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Start completed.
-maj 25, 2021 11:50:12 AM org.hibernate.dialect.Dialect <init>
-INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
-maj 25, 2021 11:50:13 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
-INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
-maj 25, 2021 11:50:13 AM io.helidon.microprofile.server.ServerCdiExtension addApplication
-INFO: Registering JAX-RS Application: Quiz_OP
-maj 25, 2021 11:50:14 AM org.glassfish.jersey.internal.Errors logErrors
-WARNING: The following warnings have been detected: WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.AdvertisementResource contains empty path annotation.
-
-maj 25, 2021 11:50:15 AM io.helidon.webserver.NettyWebServer lambda$start$7
-INFO: Channel '@default' started: [id: 0xbb730f96, L:/0:0:0:0:0:0:0:0:8099]
-maj 25, 2021 11:50:15 AM io.helidon.microprofile.server.ServerCdiExtension startServer
-INFO: Server started on http://localhost:8099 (and all other host addresses) in 10577 milliseconds (since JVM startup).
-maj 25, 2021 11:50:15 AM io.helidon.common.HelidonFeatures features
-INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
-maj 25, 2021 11:50:37 AM com.arjuna.ats.arjuna.recovery.TransactionStatusManager start
-INFO: ARJUNA012170: TransactionStatusManager started on port 49394 and host 127.0.0.1 with service com.arjuna.ats.arjuna.recovery.ActionStatusService
-Hibernate: select userpo0_.Id as id1_0_0_, userpo0_.CITY_FK as city_fk2_0_0_, userpo0_.COMPANY_NAME as company_3_0_0_, userpo0_.CREATION_DATE as creation4_0_0_, userpo0_.EMAIL as email5_0_0_, userpo0_.FIRST_NAME as first_na6_0_0_, userpo0_.LAST_NAME as last_nam7_0_0_, userpo0_.PHONE_CODE as phone_co8_0_0_, userpo0_.PHONE_NUMBER as phone_nu9_0_0_, userpo0_.TYPE as type10_0_0_ from AD_USER userpo0_ where userpo0_.Id=?
-Hibernate: insert into AdvertisementPO (CATEGORY, CREATION_DATE, HEADLINE, PRICE, TEXT, TYPE, USER_FK, Id) values (?, ?, ?, ?, ?, ?, ?, ?)
-maj 25, 2021 11:50:38 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
-WARN: SQL Error: 208, SQLState: S0002
-maj 25, 2021 11:50:38 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
-ERROR: Invalid object name 'AdvertisementPO'.
-maj 25, 2021 11:50:38 AM com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator beforeCompletion
-WARN: ARJUNA012125: TwoPhaseCoordinator.beforeCompletion - failed for SynchronizationImple< 0:ffffc0a801f7:c0f3:60acc86d:5, org.hibernate.resource.transaction.backend.jta.internal.synchronization.RegisteredSynchronization@6d6858c4 >
-javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not execute statement
-	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)
-	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
-	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1364)
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:451)
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3210)
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2378)
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:447)
-	at org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorImpl.beforeCompletion(JtaTransactionCoordinatorImpl.java:355)
-	at org.hibernate.resource.transaction.backend.jta.internal.synchronization.SynchronizationCallbackCoordinatorNonTrackingImpl.beforeCompletion(SynchronizationCallbackCoordinatorNonTrackingImpl.java:47)
-	at org.hibernate.resource.transaction.backend.jta.internal.synchronization.RegisteredSynchronization.beforeCompletion(RegisteredSynchronization.java:37)
-	at com.arjuna.ats.internal.jta.resources.arjunacore.SynchronizationImple.beforeCompletion(SynchronizationImple.java:76)
-	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.beforeCompletion(TwoPhaseCoordinator.java:360)
-	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:91)
-	at com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:162)
-	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1288)
-	at com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:126)
-	at io.helidon.integrations.jta.cdi.DelegatingTransactionManager.commit(DelegatingTransactionManager.java:106)
-	at io.helidon.integrations.jta.cdi.NarayanaTransactionManager.commit(NarayanaTransactionManager.java:221)
-	at io.helidon.integrations.jta.cdi.NarayanaTransactionManager$Proxy$_$$_WeldClientProxy.commit(Unknown Source)
-	at com.arjuna.ats.jta.cdi.transactional.TransactionalInterceptorBase.endTransaction(TransactionalInterceptorBase.java:232)
-	at com.arjuna.ats.jta.cdi.transactional.TransactionalInterceptorBase.invokeInOurTx(TransactionalInterceptorBase.java:178)
-	at com.arjuna.ats.jta.cdi.transactional.TransactionalInterceptorRequired.doIntercept(TransactionalInterceptorRequired.java:53)
-	at com.arjuna.ats.jta.cdi.transactional.TransactionalInterceptorBase.intercept(TransactionalInterceptorBase.java:88)
-	at com.arjuna.ats.jta.cdi.transactional.TransactionalInterceptorRequired.intercept(TransactionalInterceptorRequired.java:47)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
-	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
-	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
-	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
-	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
-	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
-	at dk.eaaa.service.response.AdvertisementService$Proxy$_$$_WeldSubclass.createAdvertisement(Unknown Source)
-	at dk.eaaa.resource.AdvertisementResource.createAdvertisement(AdvertisementResource.java:33)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement$$super(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.jboss.weld.interceptor.proxy.TerminalAroundInvokeInvocationContext.proceedInternal(TerminalAroundInvokeInvocationContext.java:51)
-	at org.jboss.weld.interceptor.proxy.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:78)
-	at io.helidon.microprofile.metrics.InterceptorSyntheticSimplyTimed.interceptRestEndpoint(InterceptorSyntheticSimplyTimed.java:64)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
-	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
-	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
-	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
-	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
-	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
-	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
-	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
-	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
-	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
-	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:475)
-	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:397)
-	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
-	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:255)
-	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
-	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
-	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
-	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
-	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
-	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
-	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:234)
-	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
-	at io.helidon.webserver.jersey.JerseySupport$JerseyHandler.lambda$doAccept$3(JerseySupport.java:293)
-	at io.helidon.common.context.Contexts.runInContext(Contexts.java:117)
-	at io.helidon.common.context.ContextAwareExecutorImpl.lambda$wrap$5(ContextAwareExecutorImpl.java:154)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
-	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
-	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3254)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3779)
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:107)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
-	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
-	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:348)
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:102)
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1360)
-	... 79 more
-Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'AdvertisementPO'.
-	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:262)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1632)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:602)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:524)
-	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7418)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:3274)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:247)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:222)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:473)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
-	... 90 more
-
-maj 25, 2021 11:50:38 AM io.helidon.microprofile.server.JaxRsCdiExtension$2 toResponse
-WARNING: Internal server error
-javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.
-	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1300)
-	at com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:126)
-	at io.helidon.integrations.jta.cdi.DelegatingTransactionManager.commit(DelegatingTransactionManager.java:106)
-	at io.helidon.integrations.jta.cdi.NarayanaTransactionManager.commit(NarayanaTransactionManager.java:221)
-	at io.helidon.integrations.jta.cdi.NarayanaTransactionManager$Proxy$_$$_WeldClientProxy.commit(Unknown Source)
-	at com.arjuna.ats.jta.cdi.transactional.TransactionalInterceptorBase.endTransaction(TransactionalInterceptorBase.java:232)
-	at com.arjuna.ats.jta.cdi.transactional.TransactionalInterceptorBase.invokeInOurTx(TransactionalInterceptorBase.java:178)
-	at com.arjuna.ats.jta.cdi.transactional.TransactionalInterceptorRequired.doIntercept(TransactionalInterceptorRequired.java:53)
-	at com.arjuna.ats.jta.cdi.transactional.TransactionalInterceptorBase.intercept(TransactionalInterceptorBase.java:88)
-	at com.arjuna.ats.jta.cdi.transactional.TransactionalInterceptorRequired.intercept(TransactionalInterceptorRequired.java:47)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
-	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
-	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
-	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
-	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
-	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
-	at dk.eaaa.service.response.AdvertisementService$Proxy$_$$_WeldSubclass.createAdvertisement(Unknown Source)
-	at dk.eaaa.resource.AdvertisementResource.createAdvertisement(AdvertisementResource.java:33)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement$$super(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.jboss.weld.interceptor.proxy.TerminalAroundInvokeInvocationContext.proceedInternal(TerminalAroundInvokeInvocationContext.java:51)
-	at org.jboss.weld.interceptor.proxy.AroundInvokeInvocationContext.proceed(AroundInvokeInvocationContext.java:78)
-	at io.helidon.microprofile.metrics.InterceptorSyntheticSimplyTimed.interceptRestEndpoint(InterceptorSyntheticSimplyTimed.java:64)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:73)
-	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeAroundInvoke(InterceptorMethodHandler.java:84)
-	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:72)
-	at org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:56)
-	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:79)
-	at org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:68)
-	at dk.eaaa.resource.AdvertisementResource$Proxy$_$$_WeldSubclass.createAdvertisement(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
-	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
-	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
-	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
-	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
-	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:475)
-	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:397)
-	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:81)
-	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:255)
-	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
-	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
-	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
-	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
-	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
-	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
-	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:234)
-	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
-	at io.helidon.webserver.jersey.JerseySupport$JerseyHandler.lambda$doAccept$3(JerseySupport.java:293)
-	at io.helidon.common.context.Contexts.runInContext(Contexts.java:117)
-	at io.helidon.common.context.ContextAwareExecutorImpl.lambda$wrap$5(ContextAwareExecutorImpl.java:154)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:829)
-Caused by: javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not execute statement
-	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)
-	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
-	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1364)
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:451)
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3210)
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2378)
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:447)
-	at org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorImpl.beforeCompletion(JtaTransactionCoordinatorImpl.java:355)
-	at org.hibernate.resource.transaction.backend.jta.internal.synchronization.SynchronizationCallbackCoordinatorNonTrackingImpl.beforeCompletion(SynchronizationCallbackCoordinatorNonTrackingImpl.java:47)
-	at org.hibernate.resource.transaction.backend.jta.internal.synchronization.RegisteredSynchronization.beforeCompletion(RegisteredSynchronization.java:37)
-	at com.arjuna.ats.internal.jta.resources.arjunacore.SynchronizationImple.beforeCompletion(SynchronizationImple.java:76)
-	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.beforeCompletion(TwoPhaseCoordinator.java:360)
-	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:91)
-	at com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:162)
-	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1288)
-	... 67 more
-Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
-	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:103)
-	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3254)
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3779)
-	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:107)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
-	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
-	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
-	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:348)
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
-	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:102)
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1360)
-	... 79 more
-Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'AdvertisementPO'.
-	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:262)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1632)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:602)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:524)
-	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7418)
-	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:3274)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:247)
-	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:222)
-	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.executeUpdate(SQLServerPreparedStatement.java:473)
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
-	... 90 more
-
-Listening for transport dt_socket at address: 10099
-maj 25, 2021 11:59:43 AM io.helidon.common.LogConfig doConfigureLogging
-INFO: Logging at initialization configured using defaults
-maj 25, 2021 11:59:43 AM org.jboss.weld.bootstrap.WeldStartup <clinit>
-INFO: WELD-000900: 3.1.4 (Final)
-maj 25, 2021 11:59:45 AM org.jboss.weld.environment.deployment.discovery.DiscoveryStrategyFactory create
-INFO: WELD-ENV-000020: Using jandex for bean discovery
-maj 25, 2021 11:59:45 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jersey.ext.cdi1x.internal.ProcessAllAnnotatedTypes.processAnnotatedType(@Observes ProcessAnnotatedType<?>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:59:46 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private io.helidon.microprofile.openapi.OpenApiCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-maj 25, 2021 11:59:47 AM io.helidon.tracing.tracerresolver.TracerResolverBuilder build
-INFO: TracerResolver not configured, tracing is disabled
-maj 25, 2021 11:59:47 AM io.helidon.microprofile.tracing.TracingCdiExtension prepareTracer
-WARNING: helidon-microprofile-tracing is on the classpath, yet there is no tracer implementation library. Tracing uses a no-op tracer. As a result, no tracing will be configured for WebServer and JAX-RS
-maj 25, 2021 11:59:47 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authentication provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). Security will not have any valid authentication provider
-maj 25, 2021 11:59:47 AM io.helidon.microprofile.security.SecurityCdiExtension registerSecurity
-INFO: Authorization provider is missing from security configuration, but security extension for microprofile is enabled (requires providers configuration at key security.providers). ABAC provider is configured for authorization.
-maj 25, 2021 11:59:48 AM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
-INFO: HHH000204: Processing PersistenceUnitInfo [name: demo]
-maj 25, 2021 11:59:48 AM org.hibernate.Version logVersion
-INFO: HHH000412: Hibernate ORM core version 5.4.18.Final
-maj 25, 2021 11:59:49 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
-INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-maj 25, 2021 11:59:49 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Starting...
-maj 25, 2021 11:59:49 AM com.zaxxer.hikari.HikariDataSource <init>
-INFO: HikariPool-1 - Start completed.
-maj 25, 2021 11:59:50 AM org.hibernate.dialect.Dialect <init>
-INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
-maj 25, 2021 11:59:51 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
-INFO: HHH000490: Using JtaPlatform implementation: [io.helidon.integrations.cdi.hibernate.CDISEJtaPlatform$Proxy$_$$_WeldClientProxy]
-maj 25, 2021 11:59:51 AM io.helidon.microprofile.server.ServerCdiExtension addApplication
-INFO: Registering JAX-RS Application: Quiz_OP
-maj 25, 2021 11:59:52 AM org.glassfish.jersey.internal.Errors logErrors
-WARNING: The following warnings have been detected: WARNING: The (sub)resource method createAdvertisement in dk.eaaa.resource.AdvertisementResource contains empty path annotation.
-
-maj 25, 2021 11:59:53 AM io.helidon.webserver.NettyWebServer lambda$start$7
-INFO: Channel '@default' started: [id: 0xb62c175f, L:/0:0:0:0:0:0:0:0:8099]
-maj 25, 2021 11:59:53 AM io.helidon.microprofile.server.ServerCdiExtension startServer
-INFO: Server started on http://localhost:8099 (and all other host addresses) in 10510 milliseconds (since JVM startup).
-maj 25, 2021 11:59:53 AM io.helidon.common.HelidonFeatures features
-INFO: Helidon MP 2.1.0 features: [CDI, Config, Fault Tolerance, Health, JAX-RS, JPA, JTA, Metrics, Open API, Security, Server, Tracing]
-maj 25, 2021 12:00:07 PM com.arjuna.ats.arjuna.recovery.TransactionStatusManager start
-INFO: ARJUNA012170: TransactionStatusManager started on port 49478 and host 127.0.0.1 with service com.arjuna.ats.arjuna.recovery.ActionStatusService
-Hibernate: select userpo0_.Id as id1_0_0_, userpo0_.CITY_FK as city_fk2_0_0_, userpo0_.COMPANY_NAME as company_3_0_0_, userpo0_.CREATION_DATE as creation4_0_0_, userpo0_.EMAIL as email5_0_0_, userpo0_.FIRST_NAME as first_na6_0_0_, userpo0_.LAST_NAME as last_nam7_0_0_, userpo0_.PHONE_CODE as phone_co8_0_0_, userpo0_.PHONE_NUMBER as phone_nu9_0_0_, userpo0_.TYPE as type10_0_0_ from AD_USER userpo0_ where userpo0_.Id=?
-Hibernate: insert into ADVERTISEMENT (CATEGORY, CREATION_DATE, HEADLINE, PRICE, TEXT, TYPE, USER_FK, Id) values (?, ?, ?, ?, ?, ?, ?, ?)
+maj 25, 2021 3:43:25 PM com.arjuna.ats.arjuna.recovery.TransactionStatusManager start
+INFO: ARJUNA012170: TransactionStatusManager started on port 51438 and host 127.0.0.1 with service com.arjuna.ats.arjuna.recovery.ActionStatusService
 Hibernate: select userpo0_.Id as id1_0_0_, userpo0_.CITY_FK as city_fk2_0_0_, userpo0_.COMPANY_NAME as company_3_0_0_, userpo0_.CREATION_DATE as creation4_0_0_, userpo0_.EMAIL as email5_0_0_, userpo0_.FIRST_NAME as first_na6_0_0_, userpo0_.LAST_NAME as last_nam7_0_0_, userpo0_.PHONE_CODE as phone_co8_0_0_, userpo0_.PHONE_NUMBER as phone_nu9_0_0_, userpo0_.TYPE as type10_0_0_ from AD_USER userpo0_ where userpo0_.Id=?
 Hibernate: insert into ADVERTISEMENT (CATEGORY, CREATION_DATE, HEADLINE, PRICE, TEXT, TYPE, USER_FK, Id) values (?, ?, ?, ?, ?, ?, ?, ?)
