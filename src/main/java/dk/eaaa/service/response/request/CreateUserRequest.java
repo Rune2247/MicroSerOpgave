@@ -12,17 +12,17 @@ public class CreateUserRequest {
     String phoneNumber;
     String phoneCode;
     String email;
-    String cityFK;
+    String zipcode;
     String type;
 
-    public CreateUserRequest(String firstName, String lastName, String companyName, String phoneNumber, String phoneCode, String email, String cityFK, String type) {
+    public CreateUserRequest(String firstName, String lastName, String companyName, String phoneNumber, String phoneCode, String email, String zipcode, String type) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.companyName = companyName;
         this.phoneNumber = phoneNumber;
         this.phoneCode = phoneCode;
         this.email = email;
-        this.cityFK = cityFK;
+        this.zipcode = zipcode;
         this.type = type;
     }
 
@@ -50,8 +50,8 @@ public class CreateUserRequest {
         return email;
     }
 
-    public String getCityFK() {
-        return cityFK;
+    public String getZipcode() {
+        return zipcode;
     }
 
     public String getType() {

@@ -4,6 +4,7 @@ import dk.eaaa.domain.Advertisement;
 import dk.eaaa.domain.Id;
 import dk.eaaa.domain.User;
 import dk.eaaa.repository.entity.AdvertisementPO;
+import dk.eaaa.repository.entity.CityPO;
 import dk.eaaa.repository.entity.UserPO;
 import dk.eaaa.repository.entitymanager.DemoEntityManager;
 import dk.eaaa.service.response.request.CreateAdvertisementRequest;
@@ -33,10 +34,13 @@ public class Repository {
     }
 
     public void CreateUser(CreateUserRequest user) {
-        entityManager.persist(
-                new UserPO(user.getFirstName(), user.getLastName(),
-                        user.getCompanyName(), user.getPhoneNumber(),
-                        user.getPhoneCode(), user.getEmail(), user.getCityFK(), user.getType()));
+        CityPO cityPO = entityManager.find(CityPO.class,user.getZipcode());
+
+        UserPO newuser =new UserPO(user.getFirstName(), user.getLastName(),
+                user.getCompanyName(), user.getPhoneNumber(),
+                user.getPhoneCode(), user.getEmail(), cityPO, user.getType());
+        entityManager.persist(newuser);
+
     }
 
     //ADVERTISEMENT

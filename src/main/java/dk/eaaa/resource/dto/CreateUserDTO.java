@@ -9,7 +9,7 @@ public class CreateUserDTO {
     private final  String phoneNumber;
     private final  String phoneCode;
     private final  String email;
-    private final   String cityFK;
+    private final   String zipcode;
     private final  String type;
 
     public CreateUserDTO(@JsonProperty("firstName")String firstName,
@@ -18,7 +18,7 @@ public class CreateUserDTO {
                          @JsonProperty("phoneNumber")String phoneNumber,
                          @JsonProperty("phoneCode")String phoneCode,
                          @JsonProperty("email")String email,
-                         @JsonProperty("cityFK")String cityFK,
+                         @JsonProperty("zipcode")String zipcode,
                          @JsonProperty("type")String type) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -26,7 +26,7 @@ public class CreateUserDTO {
         this.phoneNumber = phoneNumber;
         this.phoneCode = phoneCode;
         this.email = email;
-        this.cityFK = cityFK;
+        this.zipcode = zipcode;
         this.type = type;
     }
 
@@ -54,8 +54,8 @@ public class CreateUserDTO {
         return email;
     }
 
-    public String getCityFK() {
-        return cityFK;
+    public String getZipcode() {
+        return zipcode;
     }
 
     public String getType() {

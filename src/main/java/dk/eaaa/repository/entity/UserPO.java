@@ -40,8 +40,10 @@ public class UserPO {
     @Column(name = "EMAIL", columnDefinition = "VARCHAR(100)", nullable = false)
     private String email;
 
-    @Column(name = "CITY_FK", columnDefinition = "VARCHAR(4)", nullable = false)
-    private String cityFK;
+    @ManyToOne
+    @JoinColumn(name = "CITY_FK", referencedColumnName = "ZIP_CODE")
+    private CityPO city;
+
     @Column(name = "TYPE", columnDefinition = "VARCHAR(10)", nullable = false)
     private String type;
 
@@ -55,14 +57,14 @@ public class UserPO {
         // JPA
     }
 
-    public UserPO(String firstName, String lastName, String companyName, String phoneNumber, String phoneCode, String email, String city_FK, String type) {
+    public UserPO(String firstName, String lastName, String companyName, String phoneNumber, String phoneCode, String email, CityPO city, String type) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.companyName = companyName;
         this.phoneNumber = phoneNumber;
         this.phoneCode = phoneCode;
         this.email = email;
-        this.cityFK = city_FK;
+        this.city = city;
         this.type = type;
         this.created = LocalDate.now();
 
@@ -100,16 +102,16 @@ public class UserPO {
         return email;
     }
 
-    public String getCityFK() {
-        return cityFK;
-    }
-
     public String getType() {
         return type;
     }
 
     public LocalDate getCreated() {
         return created;
+    }
+
+    public CityPO getCity() {
+        return city;
     }
 }
 

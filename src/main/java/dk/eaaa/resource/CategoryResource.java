@@ -14,7 +14,7 @@ import java.util.List;
 
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    @Path("/advertisements")
+    @Path("/category")
     public class CategoryResource {
         private final AdvertisementService advertisementService;
         private final Mapper mapper;
@@ -25,18 +25,12 @@ import java.util.List;
             this.mapper = mapper;
         }
 
-        // get all post with given category
-        @Produces(MediaType.APPLICATION_JSON)
-        @Path("/search/{category}")
-        @GET
-        public List<AdvertisementDTO> getAllAdvertisements(@PathParam("category") String category){
-            return mapper.toAdvertisementDTOCategoryList(advertisementService.getAllAdvatisements(), category);
-        }
+
         //http://host:port/categories Der returnerer alle mulige kategorier
         @Produces(MediaType.APPLICATION_JSON)
         @Path("/")
         @GET
-        public List<CategoryDTO> getAllAdvertisements(){
+        public List<CategoryDTO> getAllAdvertisementsCategory(){
             return mapper.toCategoryDTOList(advertisementService.getAllAdvatisements());
         }
         @Produces(MediaType.APPLICATION_JSON)

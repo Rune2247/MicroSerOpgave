@@ -2,6 +2,7 @@ package dk.eaaa.repository;
 
 
 import dk.eaaa.domain.Advertisement;
+import dk.eaaa.domain.City;
 import dk.eaaa.domain.Id;
 import dk.eaaa.domain.User;
 import dk.eaaa.repository.entity.AdvertisementPO;
@@ -26,7 +27,7 @@ class Mapper {
                 userPO.getPhoneNumber(),
                 userPO.getPhoneCode(),
                 userPO.getEmail(),
-                userPO.getCityFK(),
+                new City(userPO.getCity().getZipcode(),userPO.getCity().getCity()),
                 userPO.getType(),
                 userPO.getCreated());
     }

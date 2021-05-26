@@ -7,8 +7,10 @@ import dk.eaaa.service.response.request.CreateUserRequest;
 
 import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
+import javax.transaction.Transactional;
 
 @Dependent
+@Transactional(rollbackOn = Exception.class)
 public class UserService {
     private final Repository repository;
 
@@ -19,5 +21,6 @@ public class UserService {
     public User getUserById(Id id){
         return repository.getUser(id);
     }
+
     public void createUser(CreateUserRequest user){repository.CreateUser(user);}
 }

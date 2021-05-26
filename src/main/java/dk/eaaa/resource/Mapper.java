@@ -49,10 +49,10 @@ public class Mapper {
 
 
 
-    AdvertisementDTO toAdvertisementDTOForUserId(List<Advertisement> advertisements, String id){
+    AdvertisementDTO toAdvertisementDTOForId(List<Advertisement> advertisements, String id){
 
         for (Advertisement a: advertisements) {
-            if (a.getId().equals(id)){
+            if (a.getId().getRaw().equals(id)){
                 AdvertisementDTO ny = new AdvertisementDTO(a.getId().getRaw(),a.getCategory(),a.getType(),
                         a.getHeadline(),a.getText(),a.getPrice(),a.getUser().getRaw(),a.getCreationDate());
                 return ny;}
@@ -67,7 +67,7 @@ public class Mapper {
         return new CreateUserRequest(createUserDTO.getFirstName(),
                 createUserDTO.getLastName(),createUserDTO.getCompanyName(),
                 createUserDTO.getPhoneNumber(),createUserDTO.getPhoneCode(),
-                createUserDTO.getEmail(),createUserDTO.getCityFK(),
+                createUserDTO.getEmail(),createUserDTO.getZipcode(),
                 createUserDTO.getType());
     }
 
@@ -77,13 +77,13 @@ public class Mapper {
                 user.getLastName(),
                 user.getCompanyName(),
                 user.getPhoneNumber(),
-                user.getPhoneCode(),user.getEmail(),user.getCityFK(),user.getType());
+                user.getPhoneCode(),user.getEmail(),user.getCity().getZipcode(),user.getCity().getCity(),user.getType());
     }
     // Category
     ArrayList<AdvertisementDTO> toAdvertisementDTOCategoryList(List<Advertisement> advertisements, String category){
         ArrayList<AdvertisementDTO> dtos = new ArrayList<>();
         for (Advertisement a: advertisements) {
-            if (a.getCategory().contains(category)){
+            if (a.getCategory().equals(category)){
                 AdvertisementDTO ny = new AdvertisementDTO(a.getId().getRaw(),a.getCategory(),a.getType(),
                         a.getHeadline(),a.getText(),a.getPrice(),a.getUser().getRaw(),a.getCreationDate());
                 dtos.add(ny);}
@@ -104,19 +104,30 @@ public class Mapper {
         return dtos;
     }
     ArrayList<CategoryDTO> toCategoryWithCount(List<Advertisement> advertisements){
+
+        boolean isSet = false;
         ArrayList<CategoryDTO> dtos = new ArrayList<>();
         for (Advertisement a: advertisements) {
-            CategoryDTO newCategory = new CategoryDTO(a.getCategory(),a.getType());
+            for (CategoryDTO c: dtos){
 
-            for (CategoryDTO c: dtos
-                 ) {
-                if (c.getCategory().equals(a.getCategory())){
+                if(c.getCategory().equals(a.getCategory())){
                     c.setCount(c.getCount()+1);
+                    isSet = true;
                 }
 
             }
-            dtos.add(newCategory);
+
+            if (isSet == false){
+                CategoryDTO newCategory = new CategoryDTO(a.getCategory(),a.getType(), 1);
+                dtos.add(newCategory);
+
+
+            } else{
+                isSet= false;
+            }
+
         }
+
         return dtos;
     }
 

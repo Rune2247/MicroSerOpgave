@@ -38,12 +38,19 @@ public class AdvertisementResource {
     public List<AdvertisementDTO> getAllAdvertisements(){
    return mapper.toAdvertisementDTOList(advertisementService.getAllAdvatisements());
     }
+    // get all post with given category
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/find/{category}")
+    @GET
+    public List<AdvertisementDTO> getAllAdvertisements(@PathParam("category") String category){
+        return mapper.toAdvertisementDTOCategoryList(advertisementService.getAllAdvatisements(), category);
+    }
 
     //http://host:port/advertisements/{id} der returnerer en specific advertisment
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/{id}")
     @GET
-    public AdvertisementDTO getAdvertisementsForUser(@PathParam("id") String Id){
-        return mapper.toAdvertisementDTOForUserId(advertisementService.getAllAdvatisements(),Id);
+    public AdvertisementDTO getAdvertisementsForId(@PathParam("id") String Id){
+        return mapper.toAdvertisementDTOForId(advertisementService.getAllAdvatisements(),Id);
     }
 }

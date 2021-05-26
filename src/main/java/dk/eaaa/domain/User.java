@@ -11,11 +11,11 @@ public class User {
     String phoneNumber;
     String phoneCode;
     String email;
-    String cityFK;
+    City city;
     String type;
     LocalDate created;
 
-    public User(Id id,String firstName, String lastName , String companyName, String phoneNumber, String phoneCode, String email, String city_FK, String type, LocalDate created) {
+    public User(Id id,String firstName, String lastName , String companyName, String phoneNumber, String phoneCode, String email, City city, String type, LocalDate created) {
         this.id = id;
         this.firstName =firstName;
         this.lastName = lastName;
@@ -23,7 +23,7 @@ public class User {
         this.phoneNumber = phoneNumber;
         this.phoneCode = phoneCode;
         this.email = email;
-        this.cityFK = city_FK;
+        this.city = city;
         this.type = type;
         this.created = created;
 
@@ -57,8 +57,8 @@ public class User {
         return email;
     }
 
-    public String getCityFK() {
-        return cityFK;
+    public City getCity() {
+        return city;
     }
 
     public String getType() {

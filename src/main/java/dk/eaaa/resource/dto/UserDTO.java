@@ -8,10 +8,11 @@ public class UserDTO {
     private final  String phoneNumber;
     private final  String phoneCode;
     private final  String email;
-    private final   String cityFK;
+    private final String zipCode;
+    private final  String city;
     private final  String type;
 
-    public UserDTO(String id, String firstName, String lastName, String companyName, String phoneNumber, String phoneCode, String email, String cityFK, String type) {
+    public UserDTO(String id, String firstName, String lastName, String companyName, String phoneNumber, String phoneCode, String email,String zipCode, String city, String type) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -19,7 +20,8 @@ public class UserDTO {
         this.phoneNumber = phoneNumber;
         this.phoneCode = phoneCode;
         this.email = email;
-        this.cityFK = cityFK;
+        this.zipCode = zipCode;
+        this.city= city;
         this.type = type;
     }
 
@@ -33,6 +35,14 @@ public class UserDTO {
 
     public String getLastName() {
         return lastName;
+    }
+
+    public String getZipCode() {
+        return zipCode;
+    }
+
+    public String getCity() {
+        return city;
     }
 
     public String getCompanyName() {
@@ -51,9 +61,6 @@ public class UserDTO {
         return email;
     }
 
-    public String getCityFK() {
-        return cityFK;
-    }
 
     public String getType() {
         return type;
