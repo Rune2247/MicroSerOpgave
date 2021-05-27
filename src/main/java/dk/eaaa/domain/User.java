@@ -1,7 +1,6 @@
 package dk.eaaa.domain;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class User {
     Id id;
@@ -15,9 +14,9 @@ public class User {
     String type;
     LocalDate created;
 
-    public User(Id id,String firstName, String lastName , String companyName, String phoneNumber, String phoneCode, String email, City city, String type, LocalDate created) {
+    public User(Id id, String firstName, String lastName, String companyName, String phoneNumber, String phoneCode, String email, City city, String type, LocalDate created) {
         this.id = id;
-        this.firstName =firstName;
+        this.firstName = firstName;
         this.lastName = lastName;
         this.companyName = companyName;
         this.phoneNumber = phoneNumber;

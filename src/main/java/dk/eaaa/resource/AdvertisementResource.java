@@ -1,10 +1,8 @@
 package dk.eaaa.resource;
 
-import dk.eaaa.domain.Advertisement;
 import dk.eaaa.resource.dto.AdvertisementDTO;
 import dk.eaaa.resource.dto.CreateAdvertisementDTO;
 import dk.eaaa.service.response.AdvertisementService;
-import dk.eaaa.service.response.request.CreateAdvertisementRequest;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -28,21 +26,23 @@ public class AdvertisementResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @Path("/")
     @POST
-    public void createAdvertisement(CreateAdvertisementDTO advertisementDTO){
-    advertisementService.createAdvertisement(mapper.createAdvertisement(advertisementDTO));
+    public void createAdvertisement(CreateAdvertisementDTO advertisementDTO) {
+        advertisementService.createAdvertisement(mapper.createAdvertisement(advertisementDTO));
     }
+
     //http://host:port/advertisements med query param ?category=<caterory>
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/")
     @GET
-    public List<AdvertisementDTO> getAllAdvertisements(){
-   return mapper.toAdvertisementDTOList(advertisementService.getAllAdvatisements());
+    public List<AdvertisementDTO> getAllAdvertisements() {
+        return mapper.toAdvertisementDTOList(advertisementService.getAllAdvatisements());
     }
+
     // get all post with given category
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/find/{category}")
     @GET
-    public List<AdvertisementDTO> getAllAdvertisements(@PathParam("category") String category){
+    public List<AdvertisementDTO> getAllAdvertisements(@PathParam("category") String category) {
         return mapper.toAdvertisementDTOCategoryList(advertisementService.getAllAdvatisements(), category);
     }
 
@@ -50,7 +50,7 @@ public class AdvertisementResource {
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/{id}")
     @GET
-    public AdvertisementDTO getAdvertisementsForId(@PathParam("id") String Id){
-        return mapper.toAdvertisementDTOForId(advertisementService.getAllAdvatisements(),Id);
+    public AdvertisementDTO getAdvertisementsForId(@PathParam("id") String Id) {
+        return mapper.toAdvertisementDTOForId(advertisementService.getAllAdvatisements(), Id);
     }
 }

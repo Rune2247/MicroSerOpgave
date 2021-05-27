@@ -4,15 +4,15 @@ public class UserDTO {
     private final String id;
     private final String firstName;
     private final String lastName;
-    private final  String companyName;
-    private final  String phoneNumber;
-    private final  String phoneCode;
-    private final  String email;
+    private final String companyName;
+    private final String phoneNumber;
+    private final String phoneCode;
+    private final String email;
     private final String zipCode;
-    private final  String city;
-    private final  String type;
+    private final String city;
+    private final String type;
 
-    public UserDTO(String id, String firstName, String lastName, String companyName, String phoneNumber, String phoneCode, String email,String zipCode, String city, String type) {
+    public UserDTO(String id, String firstName, String lastName, String companyName, String phoneNumber, String phoneCode, String email, String zipCode, String city, String type) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -21,7 +21,7 @@ public class UserDTO {
         this.phoneCode = phoneCode;
         this.email = email;
         this.zipCode = zipCode;
-        this.city= city;
+        this.city = city;
         this.type = type;
     }
 

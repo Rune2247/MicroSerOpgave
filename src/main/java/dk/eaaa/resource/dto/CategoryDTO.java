@@ -10,6 +10,7 @@ public class CategoryDTO {
         this.type = type;
         this.count = count;
     }
+
     public CategoryDTO(String category, String type) {
         this.category = category;
         this.type = type;

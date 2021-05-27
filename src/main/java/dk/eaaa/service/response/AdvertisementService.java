@@ -20,11 +20,11 @@ public class AdvertisementService {
     }
 
 
-    public void createAdvertisement(CreateAdvertisementRequest advertisement){
+    public void createAdvertisement(CreateAdvertisementRequest advertisement) {
         repository.createAdvertisement(advertisement);
     }
 
-    public List<Advertisement> getAllAdvatisements(){
+    public List<Advertisement> getAllAdvatisements() {
         return repository.getAllAdvertisements();
     }
 }

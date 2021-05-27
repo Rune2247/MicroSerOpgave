@@ -7,11 +7,11 @@ import java.time.LocalDate;
 import java.util.UUID;
 
 @Entity
-@Table(name ="ADVERTISEMENT")
+@Table(name = "ADVERTISEMENT")
 @NamedQueries({
         @NamedQuery(name = "AdvertisementPO.findAll", query = "SELECT u FROM AdvertisementPO u")})
 public class AdvertisementPO {
-public static final String FIND_ALL = "AdvertisementPO.findAll";
+    public static final String FIND_ALL = "AdvertisementPO.findAll";
 
     @Id
     @GeneratedValue

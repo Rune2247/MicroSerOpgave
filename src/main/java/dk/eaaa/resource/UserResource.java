@@ -1,7 +1,6 @@
 package dk.eaaa.resource;
 
 import dk.eaaa.domain.Id;
-import dk.eaaa.resource.dto.CreateAdvertisementDTO;
 import dk.eaaa.resource.dto.CreateUserDTO;
 import dk.eaaa.resource.dto.UserDTO;
 import dk.eaaa.service.response.UserService;
@@ -9,7 +8,6 @@ import dk.eaaa.service.response.UserService;
 import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-
 
 
 @Produces(MediaType.APPLICATION_JSON)
@@ -35,9 +33,11 @@ public class UserResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @Path("/")
     @POST
-    public void createUser(CreateUserDTO userDTO){
+    public void createUser(CreateUserDTO userDTO) {
         userService.createUser(mapper.fromCreateUser(userDTO));
     }
+
+
 }
 
 

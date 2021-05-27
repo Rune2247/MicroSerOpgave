@@ -1,6 +1,5 @@
 package dk.eaaa.domain;
 
-
 import java.time.LocalDate;
 
 public class Advertisement {

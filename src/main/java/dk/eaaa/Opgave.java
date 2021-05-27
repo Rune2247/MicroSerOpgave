@@ -6,6 +6,6 @@ import javax.ws.rs.core.Application;
 
 @ApplicationScoped
 @ApplicationPath("/")
-public class Quiz_OP extends Application {
+public class Opgave extends Application {
 
 }

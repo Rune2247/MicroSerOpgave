@@ -14,13 +14,13 @@ public class CreateAdvertisementDTO {
 
     @JsonCreator
     public CreateAdvertisementDTO(
-                                  @JsonProperty("category") String category,
-                                  @JsonProperty("type") String type,
-                                  @JsonProperty("headline") String headline,
-                                  @JsonProperty("text") String text,
-                                  @JsonProperty("price") int price,
-                                  @JsonProperty("user") String user
-                                  ) {
+            @JsonProperty("category") String category,
+            @JsonProperty("type") String type,
+            @JsonProperty("headline") String headline,
+            @JsonProperty("text") String text,
+            @JsonProperty("price") int price,
+            @JsonProperty("user") String user
+    ) {
 
         this.category = category;
         this.type = type;
@@ -30,7 +30,6 @@ public class CreateAdvertisementDTO {
         this.user = user;
 
     }
-
 
 
     public String getCategory() {

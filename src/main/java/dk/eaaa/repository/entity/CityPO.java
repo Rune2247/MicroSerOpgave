@@ -1,12 +1,12 @@
 package dk.eaaa.repository.entity;
 
-import org.hibernate.annotations.Type;
-
-import javax.persistence.*;
-import java.util.UUID;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
-@Table(name ="CITY")
+@Table(name = "CITY")
 public class CityPO {
 
     @Id

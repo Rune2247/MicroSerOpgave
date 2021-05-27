@@ -1,7 +1,5 @@
 package dk.eaaa.resource.dto;
 
-import dk.eaaa.domain.Id;
-
 import java.time.LocalDate;
 
 public class AdvertisementDTO {

@@ -18,9 +18,12 @@ public class UserService {
     public UserService(Repository repository) {
         this.repository = repository;
     }
-    public User getUserById(Id id){
+
+    public User getUserById(Id id) {
         return repository.getUser(id);
     }
 
-    public void createUser(CreateUserRequest user){repository.CreateUser(user);}
+    public void createUser(CreateUserRequest user) {
+        repository.CreateUser(user);
+    }
 }

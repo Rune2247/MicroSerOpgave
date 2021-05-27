@@ -7,7 +7,7 @@ plugins {
 
 group 'dk.eaaa'
 version '1.0-SNAPSHOT'
-description = """consultants-service"""
+description = """Opgave"""
 
 repositories {
     mavenCentral()

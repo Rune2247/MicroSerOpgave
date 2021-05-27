@@ -1,9 +1,5 @@
 package dk.eaaa.service.response.request;
 
-import dk.eaaa.domain.Id;
-
-import java.time.LocalDate;
-
 public class CreateUserRequest {
 
     String firstName;

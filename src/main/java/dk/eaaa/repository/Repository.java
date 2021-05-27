@@ -13,7 +13,6 @@ import dk.eaaa.service.response.request.CreateUserRequest;
 import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
-import java.time.LocalDate;
 import java.util.List;
 
 @Dependent
@@ -34,9 +33,9 @@ public class Repository {
     }
 
     public void CreateUser(CreateUserRequest user) {
-        CityPO cityPO = entityManager.find(CityPO.class,user.getZipcode());
+        CityPO cityPO = entityManager.find(CityPO.class, user.getZipcode());
 
-        UserPO newuser =new UserPO(user.getFirstName(), user.getLastName(),
+        UserPO newuser = new UserPO(user.getFirstName(), user.getLastName(),
                 user.getCompanyName(), user.getPhoneNumber(),
                 user.getPhoneCode(), user.getEmail(), cityPO, user.getType());
         entityManager.persist(newuser);
